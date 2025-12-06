@@ -1,0 +1,871 @@
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:8932:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:8932:7: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:9906:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:9906:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:9920:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:9920:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:9934:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:9934:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:11533:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:11533:7: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15669:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15670:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15671:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15672:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15673:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15703:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15704:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15705:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15706:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15707:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15708:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15709:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15710:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15711:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15712:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15762:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15763:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15764:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15791:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15792:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15793:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15794:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15795:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15796:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15832:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:15833:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16107:5: warning: Added loop label VITIS_LOOP_87_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_87_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16107:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16153:5: warning: Added loop label VITIS_LOOP_143_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_143_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16153:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16316:9: warning: Added loop label VITIS_LOOP_315_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_315_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16316:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16468:9: warning: Added loop label VITIS_LOOP_475_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_475_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16468:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16648:5: warning: Added loop label VITIS_LOOP_655_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_655_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16648:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16652:5: warning: Added loop label VITIS_LOOP_659_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_659_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16652:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16762:5: warning: Added loop label VITIS_LOOP_769_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_769_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16762:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16852:7: warning: Added loop label VITIS_LOOP_866_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_866_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16852:7: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16871:7: warning: Added loop label VITIS_LOOP_885_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_885_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:16871:7: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17161:5: warning: Added loop label VITIS_LOOP_1199_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1199_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17161:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17244:5: warning: Added loop label VITIS_LOOP_1282_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1282_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17244:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17650:13: warning: Added loop label VITIS_LOOP_94_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_94_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17650:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17656:17: warning: Added loop label VITIS_LOOP_100_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_100_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17656:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17660:17: warning: Added loop label VITIS_LOOP_104_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_104_3: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17660:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17708:13: warning: Added loop label VITIS_LOOP_171_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_171_4: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17708:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17714:17: warning: Added loop label VITIS_LOOP_177_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_177_5: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17714:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17718:17: warning: Added loop label VITIS_LOOP_181_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_181_6: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17718:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17733:9: warning: Added loop label VITIS_LOOP_196_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_196_7: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17733:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17741:17: warning: Added loop label VITIS_LOOP_204_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_204_8: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17741:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17806:13: warning: Added loop label VITIS_LOOP_269_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_269_9: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17806:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17812:17: warning: Added loop label VITIS_LOOP_275_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_275_10: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17812:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17816:17: warning: Added loop label VITIS_LOOP_279_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_279_11: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17816:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17831:9: warning: Added loop label VITIS_LOOP_294_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_294_12: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17831:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17839:17: warning: Added loop label VITIS_LOOP_302_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_302_13: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:17839:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18068:13: warning: Added loop label VITIS_LOOP_531_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_531_14: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18068:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18074:17: warning: Added loop label VITIS_LOOP_537_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_537_15: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18074:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18078:17: warning: Added loop label VITIS_LOOP_541_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_541_16: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18078:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18088:9: warning: Added loop label VITIS_LOOP_551_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_551_17: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18088:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18092:9: warning: Added loop label VITIS_LOOP_555_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_555_18: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18092:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18102:9: warning: Added loop label VITIS_LOOP_565_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_565_19: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18102:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18110:17: warning: Added loop label VITIS_LOOP_573_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_573_20: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18110:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18471:13: warning: Added loop label VITIS_LOOP_934_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_934_21: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18471:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18477:17: warning: Added loop label VITIS_LOOP_940_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_940_22: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18477:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18481:17: warning: Added loop label VITIS_LOOP_944_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_944_23: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18481:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18597:13: warning: Added loop label VITIS_LOOP_1060_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1060_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18597:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18603:17: warning: Added loop label VITIS_LOOP_1066_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1066_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18603:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18607:17: warning: Added loop label VITIS_LOOP_1070_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1070_3: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18607:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18694:13: warning: Added loop label VITIS_LOOP_1157_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1157_4: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18694:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18700:17: warning: Added loop label VITIS_LOOP_1163_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1163_5: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18700:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18704:17: warning: Added loop label VITIS_LOOP_1167_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1167_6: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18704:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18723:9: warning: Added loop label VITIS_LOOP_1186_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1186_7: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18723:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18730:17: warning: Added loop label VITIS_LOOP_1193_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1193_8: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18730:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18846:13: warning: Added loop label VITIS_LOOP_1309_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1309_9: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18846:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18852:17: warning: Added loop label VITIS_LOOP_1315_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1315_10: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18852:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18856:17: warning: Added loop label VITIS_LOOP_1319_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1319_11: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18856:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18876:9: warning: Added loop label VITIS_LOOP_1339_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1339_12: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18876:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18883:17: warning: Added loop label VITIS_LOOP_1346_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1346_13: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:18883:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19145:13: warning: Added loop label VITIS_LOOP_1608_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1608_14: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19145:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19151:17: warning: Added loop label VITIS_LOOP_1614_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1614_15: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19151:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19155:17: warning: Added loop label VITIS_LOOP_1618_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1618_16: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19155:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19179:9: warning: Added loop label VITIS_LOOP_1642_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1642_17: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19179:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19186:17: warning: Added loop label VITIS_LOOP_1649_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1649_18: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19186:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19616:13: warning: Added loop label VITIS_LOOP_2079_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2079_19: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19616:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19622:17: warning: Added loop label VITIS_LOOP_2085_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2085_20: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19622:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19626:17: warning: Added loop label VITIS_LOOP_2089_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2089_21: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19626:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19756:13: warning: Added loop label VITIS_LOOP_2219_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2219_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19756:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19763:17: warning: Added loop label VITIS_LOOP_2226_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2226_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19763:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19767:17: warning: Added loop label VITIS_LOOP_2230_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2230_3: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19767:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19814:13: warning: Added loop label VITIS_LOOP_2277_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2277_4: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19814:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19821:17: warning: Added loop label VITIS_LOOP_2284_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2284_5: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19821:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19825:17: warning: Added loop label VITIS_LOOP_2288_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2288_6: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19825:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19843:9: warning: Added loop label VITIS_LOOP_2306_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2306_7: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19843:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19898:13: warning: Added loop label VITIS_LOOP_2361_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2361_8: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19898:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19905:17: warning: Added loop label VITIS_LOOP_2368_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2368_9: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19905:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19909:17: warning: Added loop label VITIS_LOOP_2372_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2372_10: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19909:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19927:9: warning: Added loop label VITIS_LOOP_2390_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2390_11: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:19927:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20016:13: warning: Added loop label VITIS_LOOP_2479_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2479_12: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20016:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20023:17: warning: Added loop label VITIS_LOOP_2486_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2486_13: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20023:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20027:17: warning: Added loop label VITIS_LOOP_2490_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2490_14: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20027:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20037:9: warning: Added loop label VITIS_LOOP_2500_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2500_15: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20037:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20041:9: warning: Added loop label VITIS_LOOP_2504_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2504_16: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20041:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20052:9: warning: Added loop label VITIS_LOOP_2515_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2515_17: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20052:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20060:17: warning: Added loop label VITIS_LOOP_2523_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2523_18: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20060:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20385:13: warning: Added loop label VITIS_LOOP_2848_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2848_19: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20385:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20392:17: warning: Added loop label VITIS_LOOP_2855_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2855_20: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20392:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20396:17: warning: Added loop label VITIS_LOOP_2859_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2859_21: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20396:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20484:4: warning: Added loop label VITIS_LOOP_2947_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2947_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20484:4: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20491:5: warning: Added loop label VITIS_LOOP_2954_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2954_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20491:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20495:5: warning: Added loop label VITIS_LOOP_2958_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2958_3: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20495:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20510:3: warning: Added loop label VITIS_LOOP_2973_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2973_4: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20510:3: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20542:4: warning: Added loop label VITIS_LOOP_3005_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_3005_5: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20542:4: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20549:5: warning: Added loop label VITIS_LOOP_3012_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_3012_6: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20549:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20553:5: warning: Added loop label VITIS_LOOP_3016_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3016_7: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20553:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20568:3: warning: Added loop label VITIS_LOOP_3031_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3031_8: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20568:3: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20618:4: warning: Added loop label VITIS_LOOP_3081_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3081_9: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20618:4: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20625:5: warning: Added loop label VITIS_LOOP_3088_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3088_10: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20625:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20629:5: warning: Added loop label VITIS_LOOP_3092_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3092_11: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20629:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20644:3: warning: Added loop label VITIS_LOOP_3107_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3107_12: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20644:3: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20781:4: warning: Added loop label VITIS_LOOP_3244_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3244_13: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20781:4: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20788:5: warning: Added loop label VITIS_LOOP_3251_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3251_14: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20788:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20792:5: warning: Added loop label VITIS_LOOP_3255_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3255_15: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20792:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20807:3: warning: Added loop label VITIS_LOOP_3270_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3270_16: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20807:3: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20967:4: warning: Added loop label VITIS_LOOP_3430_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3430_17: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20967:4: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20974:5: warning: Added loop label VITIS_LOOP_3437_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3437_18: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20974:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20978:5: warning: Added loop label VITIS_LOOP_3441_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3441_19: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:20978:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:21693:13: warning: Added loop label VITIS_LOOP_729_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_729_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:21693:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:21911:13: warning: Added loop label VITIS_LOOP_947_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_947_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:21911:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:22328:13: warning: Added loop label VITIS_LOOP_1371_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1371_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:22328:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:22642:9: warning: Added loop label VITIS_LOOP_266_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_266_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:22642:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:22670:9: warning: Added loop label VITIS_LOOP_294_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_294_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:22670:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23365:13: warning: Added loop label VITIS_LOOP_74_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_74_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23365:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23418:5: warning: Added loop label VITIS_LOOP_135_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_135_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23418:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23432:13: warning: Added loop label VITIS_LOOP_149_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_149_3: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23432:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23462:13: warning: Added loop label VITIS_LOOP_179_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_179_4: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23462:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23547:12: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_307_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23547:12: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23567:16: warning: Added loop label VITIS_LOOP_327_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_327_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23567:16: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23581:20: warning: Added loop label VITIS_LOOP_341_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_341_3: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23581:20: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23674:12: warning: Added loop label VITIS_LOOP_459_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_459_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23674:12: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23688:15: warning: Added loop label VITIS_LOOP_473_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_473_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23688:15: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23801:13: warning: Added loop label VITIS_LOOP_59_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_59_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23801:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23925:13: warning: Added loop label VITIS_LOOP_209_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_209_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23925:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23980:13: warning: Added loop label VITIS_LOOP_274_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_274_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:23980:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24485:2: warning: Added loop label VITIS_LOOP_42_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_42_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24485:2: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24496:2: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_53_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24496:2: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24507:2: warning: Added loop label VITIS_LOOP_64_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_64_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24507:2: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24518:2: warning: Added loop label VITIS_LOOP_75_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_75_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24518:2: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24529:2: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_86_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24529:2: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24540:2: warning: Added loop label VITIS_LOOP_97_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_97_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24540:2: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24551:2: warning: Added loop label VITIS_LOOP_108_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_108_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24551:2: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24562:2: warning: Added loop label VITIS_LOOP_119_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_119_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:24562:2: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:26863:12: warning: Added loop label VITIS_LOOP_23_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_23_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:26863:12: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:26927:7: warning: Added loop label VITIS_LOOP_66_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_66_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:26927:7: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:27044:9: warning: Added loop label VITIS_LOOP_75_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_75_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:27044:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:27069:5: warning: Added loop label VITIS_LOOP_107_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_107_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:27069:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:27139:8: warning: Added loop label VITIS_LOOP_195_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_195_3: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:27139:8: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29414:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+ for(int i = 0; i < size; ++i){
+ ^~~
+ VITIS_LOOP_38_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29414:2: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29435:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=img_read core=RAM_2P_BRAM
+        ^
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29460:5: warning: Added loop label VITIS_LOOP_76_1:   [xilinx-label-all-loops]
+    for(int f=0; f<4; f++) {
+    ^~~
+    VITIS_LOOP_76_1: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29460:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29461:9: warning: Added loop label VITIS_LOOP_77_2:   [xilinx-label-all-loops]
+        for(int r=0; r<62; r++) {
+        ^~~
+        VITIS_LOOP_77_2: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29461:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29462:13: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+            for(int c=0; c<62; c++) {
+            ^~~
+            VITIS_LOOP_78_3: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29462:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29467:17: warning: Added loop label VITIS_LOOP_83_4:   [xilinx-label-all-loops]
+                for(int kr=0; kr<3; kr++) {
+                ^~~
+                VITIS_LOOP_83_4: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29467:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29468:21: warning: Added loop label VITIS_LOOP_84_5:   [xilinx-label-all-loops]
+                    for(int kc=0; kc<3; kc++) {
+                    ^~~
+                    VITIS_LOOP_84_5: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29468:21: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29487:5: warning: Added loop label VITIS_LOOP_103_6:   [xilinx-label-all-loops]
+    for(int f=0; f<4; f++) {
+    ^~~
+    VITIS_LOOP_103_6: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29487:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29488:9: warning: Added loop label VITIS_LOOP_104_7:   [xilinx-label-all-loops]
+        for(int r=0; r<31; r++) {
+        ^~~
+        VITIS_LOOP_104_7: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29488:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29489:13: warning: Added loop label VITIS_LOOP_105_8:   [xilinx-label-all-loops]
+            for(int c=0; c<31; c++) {
+            ^~~
+            VITIS_LOOP_105_8: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29489:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29491:17: warning: Added loop label VITIS_LOOP_107_9:   [xilinx-label-all-loops]
+                for(int pr=0; pr<2; pr++) {
+                ^~~
+                VITIS_LOOP_107_9: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29491:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29492:21: warning: Added loop label VITIS_LOOP_108_10:   [xilinx-label-all-loops]
+                    for(int pc=0; pc<2; pc++) {
+                    ^~~
+                    VITIS_LOOP_108_10: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29492:21: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29505:5: warning: Added loop label VITIS_LOOP_121_11:   [xilinx-label-all-loops]
+    for(int f=0; f<8; f++) {
+    ^~~
+    VITIS_LOOP_121_11: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29505:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29506:9: warning: Added loop label VITIS_LOOP_122_12:   [xilinx-label-all-loops]
+        for(int r=0; r<29; r++) {
+        ^~~
+        VITIS_LOOP_122_12: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29506:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29507:13: warning: Added loop label VITIS_LOOP_123_13:   [xilinx-label-all-loops]
+            for(int c=0; c<29; c++) {
+            ^~~
+            VITIS_LOOP_123_13: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29507:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29510:17: warning: Added loop label VITIS_LOOP_126_14:   [xilinx-label-all-loops]
+                for(int kr=0; kr<3; kr++) {
+                ^~~
+                VITIS_LOOP_126_14: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29510:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29511:21: warning: Added loop label VITIS_LOOP_127_15:   [xilinx-label-all-loops]
+                    for(int kc=0; kc<3; kc++) {
+                    ^~~
+                    VITIS_LOOP_127_15: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29511:21: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29513:25: warning: Added loop label VITIS_LOOP_129_16:   [xilinx-label-all-loops]
+                        for(int d=0; d<4; d++) {
+                        ^~~
+                        VITIS_LOOP_129_16: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29513:25: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29531:5: warning: Added loop label VITIS_LOOP_147_17:   [xilinx-label-all-loops]
+    for(int f=0; f<8; f++) {
+    ^~~
+    VITIS_LOOP_147_17: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29531:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29532:9: warning: Added loop label VITIS_LOOP_148_18:   [xilinx-label-all-loops]
+        for(int r=0; r<14; r++) {
+        ^~~
+        VITIS_LOOP_148_18: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29532:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29533:13: warning: Added loop label VITIS_LOOP_149_19:   [xilinx-label-all-loops]
+            for(int c=0; c<14; c++) {
+            ^~~
+            VITIS_LOOP_149_19: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29533:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29535:17: warning: Added loop label VITIS_LOOP_151_20:   [xilinx-label-all-loops]
+                for(int pr=0; pr<2; pr++) {
+                ^~~
+                VITIS_LOOP_151_20: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29535:17: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29536:21: warning: Added loop label VITIS_LOOP_152_21:   [xilinx-label-all-loops]
+                    for(int pc=0; pc<2; pc++) {
+                    ^~~
+                    VITIS_LOOP_152_21: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29536:21: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29551:5: warning: Added loop label VITIS_LOOP_167_22:   [xilinx-label-all-loops]
+    for(int r=0; r<14; r++) {
+    ^~~
+    VITIS_LOOP_167_22: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29551:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29552:9: warning: Added loop label VITIS_LOOP_168_23:   [xilinx-label-all-loops]
+        for(int c=0; c<14; c++) {
+        ^~~
+        VITIS_LOOP_168_23: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29552:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29553:13: warning: Added loop label VITIS_LOOP_169_24:   [xilinx-label-all-loops]
+            for(int f=0; f<8; f++) {
+            ^~~
+            VITIS_LOOP_169_24: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29553:13: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29562:5: warning: Added loop label VITIS_LOOP_178_25:   [xilinx-label-all-loops]
+    for(int i=0; i<16; i++) {
+    ^~~
+    VITIS_LOOP_178_25: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29562:5: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29564:9: warning: Added loop label VITIS_LOOP_180_26:   [xilinx-label-all-loops]
+        for(int j=0; j<(14 * 14 * 8); j++) {
+        ^~~
+        VITIS_LOOP_180_26: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29564:9: note: FIX-IT applied suggested code changes
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29576:5: warning: Added loop label VITIS_LOOP_192_27:   [xilinx-label-all-loops]
+    for(int j=0; j<16; j++) {
+    ^~~
+    VITIS_LOOP_192_27: 
+/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp:29576:5: note: FIX-IT applied suggested code changes

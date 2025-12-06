@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cnn.cpp" path="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn.cpp"/>
+    <originFiles name="weights.h" path="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/weights.h"/>
+  </source>
+  <testbench>
+    <originFiles name="image_6.txt" path="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/images/image_6.txt"/>
+    <originFiles name="image_1.txt" path="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/images/image_1.txt"/>
+    <originFiles name="cnn_tb.cpp" path="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

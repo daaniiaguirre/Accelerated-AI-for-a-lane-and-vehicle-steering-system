@@ -1,0 +1,49 @@
+INFO: [HLS 200-10] Running '/home/dani/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'dani' on host 'dani-ASUS-TUF-Gaming-A15' (Linux_x86_64 version 6.8.0-87-generic) on Tue Nov 25 17:14:40 CET 2025
+INFO: [HLS 200-10] On os Ubuntu 22.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls'
+Sourcing Tcl script '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/csim.tcl
+INFO: [HLS 200-1510] Running: open_project cnn_hls 
+INFO: [HLS 200-10] Opening project '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls'.
+INFO: [HLS 200-1510] Running: set_top cnn_predict 
+INFO: [HLS 200-1510] Running: add_files ../weights.h 
+INFO: [HLS 200-10] Adding design file '../weights.h' to the project
+INFO: [HLS 200-1510] Running: add_files cnn.cpp 
+INFO: [HLS 200-10] Adding design file 'cnn.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb cnn_tb.cpp -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'cnn_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb images/image_1.txt -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'images/image_1.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb images/image_6.txt -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'images/image_6.txt' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-i 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./cnn_hls/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name cnn_predict cnn_predict 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Running Dispatch Server on port: 41809
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+--- STARTING SINGLE IMAGE TEST ---
+
+SUCCESS!
+Input File: image_1.txt
+Predicted Steering: 0.1101
+Action: TURN LEFT
+----------------------------------
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.07 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.13 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 1.11 seconds. Total CPU system time: 0.29 seconds. Total elapsed time: 11.26 seconds; peak allocated memory: 226.895 MB.

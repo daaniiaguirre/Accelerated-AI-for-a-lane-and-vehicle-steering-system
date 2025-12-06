@@ -1,0 +1,349 @@
+
+
+================================================================
+== Synthesis Summary Report of 'cnn_predict'
+================================================================
++ General Information: 
+    * Date:           Tue Nov 25 13:54:37 2025
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        cnn_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sbva484-1-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+------------+-------------+-----+
+    |                                    Modules                                    | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |           |          |            |             |     |
+    |                                    & Loops                                    | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM    |    DSP   |     FF     |     LUT     | URAM|
+    +-------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+------------+-------------+-----+
+    |+ cnn_predict                                                                  |     -|  0.00|   209225|  2.092e+06|         -|   209226|     -|        no|  314 (72%)|  68 (18%)|  14016 (9%)|  16547 (23%)|    -|
+    | + cnn_predict_Pipeline_VITIS_LOOP_38_1                                        |     -|  0.00|     4099|  4.099e+04|         -|     4099|     -|        no|          -|         -|    90 (~0%)|    514 (~0%)|    -|
+    |  o VITIS_LOOP_38_1                                                            |    II|  7.30|     4097|  4.097e+04|        18|       16|   256|       yes|          -|         -|           -|            -|    -|
+    | + cnn_predict_Pipeline_VITIS_LOOP_103_6_VITIS_LOOP_104_7_VITIS_LOOP_105_8     |     -|  0.08|     3852|  3.852e+04|         -|     3852|     -|        no|          -|         -|   575 (~0%)|    1103 (1%)|    -|
+    |  o VITIS_LOOP_103_6_VITIS_LOOP_104_7_VITIS_LOOP_105_8                         |     -|  7.30|     3850|  3.850e+04|         8|        1|  3844|       yes|          -|         -|           -|            -|    -|
+    | + cnn_predict_Pipeline_VITIS_LOOP_121_11_VITIS_LOOP_122_12_VITIS_LOOP_123_13  |     -|  1.28|    20369|  2.037e+05|         -|    20369|     -|        no|    12 (2%)|  51 (14%)|   8477 (6%)|   7473 (10%)|    -|
+    |  o VITIS_LOOP_121_11_VITIS_LOOP_122_12_VITIS_LOOP_123_13                      |    II|  7.30|    20367|  2.037e+05|       187|        3|  6728|       yes|          -|         -|           -|            -|    -|
+    | + cnn_predict_Pipeline_VITIS_LOOP_147_17_VITIS_LOOP_148_18_VITIS_LOOP_149_19  |     -|  0.08|     1577|  1.577e+04|         -|     1577|     -|        no|          -|         -|   573 (~0%)|     939 (1%)|    -|
+    |  o VITIS_LOOP_147_17_VITIS_LOOP_148_18_VITIS_LOOP_149_19                      |     -|  7.30|     1575|  1.575e+04|         9|        1|  1568|       yes|          -|         -|           -|            -|    -|
+    | + cnn_predict_Pipeline_VITIS_LOOP_167_22_VITIS_LOOP_168_23_VITIS_LOOP_169_24  |     -|  1.15|     1570|  1.570e+04|         -|     1570|     -|        no|          -|         -|    69 (~0%)|    427 (~0%)|    -|
+    |  o VITIS_LOOP_167_22_VITIS_LOOP_168_23_VITIS_LOOP_169_24                      |     -|  7.30|     1568|  1.568e+04|         2|        1|  1568|       yes|          -|         -|           -|            -|    -|
+    | + cnn_predict_Pipeline_VITIS_LOOP_192_27                                      |     -|  0.79|       71|    710.000|         -|       71|     -|        no|          -|         -|   112 (~0%)|    139 (~0%)|    -|
+    |  o VITIS_LOOP_192_27                                                          |    II|  7.30|       69|    690.000|        10|        4|    16|       yes|          -|         -|           -|            -|    -|
+    | o VITIS_LOOP_76_1                                                             |     -|  7.30|    77100|  7.710e+05|     19275|        -|     4|        no|          -|         -|           -|            -|    -|
+    |  + cnn_predict_Pipeline_VITIS_LOOP_77_2_VITIS_LOOP_78_3                       |     -|  0.88|    19272|  1.927e+05|         -|    19272|     -|        no|          -|         -|  1361 (~0%)|    1099 (1%)|    -|
+    |   o VITIS_LOOP_77_2_VITIS_LOOP_78_3                                           |    II|  7.30|    19270|  1.927e+05|        56|        5|  3844|       yes|          -|         -|           -|            -|    -|
+    | o VITIS_LOOP_178_25                                                           |     -|  7.30|   100544|  1.005e+06|      6284|        -|    16|        no|          -|         -|           -|            -|    -|
+    |  + cnn_predict_Pipeline_VITIS_LOOP_180_26                                     |     -|  0.79|     6281|  6.281e+04|         -|     6281|     -|        no|   50 (11%)|         -|   250 (~0%)|    258 (~0%)|    -|
+    |   o VITIS_LOOP_180_26                                                         |    II|  7.30|     6279|  6.279e+04|        12|        4|  1568|       yes|          -|         -|           -|            -|    -|
+    +-------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+-------------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register          | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+-------------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL              | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER              | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER            | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR            | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | img_in_1          | 0x10   | 32    | W      | Data signal of img_in            |                                                                      |
+| s_axi_control | img_in_2          | 0x14   | 32    | W      | Data signal of img_in            |                                                                      |
+| s_axi_control | steering_out      | 0x1c   | 32    | R      | Data signal of steering_out      |                                                                      |
+| s_axi_control | steering_out_ctrl | 0x20   | 32    | R      | Control signal of steering_out   | 0=steering_out_ap_vld                                                |
++---------------+-------------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------+-----------+----------+
+| Argument     | Direction | Datatype |
++--------------+-----------+----------+
+| img_in       | in        | float*   |
+| steering_out | out       | float*   |
++--------------+-----------+----------+
+
+* SW-to-HW Mapping
++--------------+---------------+-----------+----------+---------------------------------------------+
+| Argument     | HW Interface  | HW Type   | HW Usage | HW Info                                     |
++--------------+---------------+-----------+----------+---------------------------------------------+
+| img_in       | m_axi_gmem    | interface |          |                                             |
+| img_in       | s_axi_control | register  | offset   | name=img_in_1 offset=0x10 range=32          |
+| img_in       | s_axi_control | register  | offset   | name=img_in_2 offset=0x14 range=32          |
+| steering_out | s_axi_control | register  |          | name=steering_out offset=0x1c range=32      |
+| steering_out | s_axi_control | register  |          | name=steering_out_ctrl offset=0x20 range=32 |
++--------------+---------------+-----------+----------+---------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------------+-----------+--------+-------+---------------+
+| HW Interface | Loop            | Direction | Length | Width | Location      |
++--------------+-----------------+-----------+--------+-------+---------------+
+| m_axi_gmem   | VITIS_LOOP_38_1 | read      | 4096   | 32    | cnn.cpp:38:19 |
++--------------+-----------------+-----------+--------+-------+---------------+
+
+* Inferred Bursts and Widening Missed
++--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+---------------+
+| HW Interface | Variable | Loop            | Problem                                                                                                 | Resolution | Location      |
++--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+---------------+
+| m_axi_gmem   | img_in   | VITIS_LOOP_38_1 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | cnn.cpp:38:19 |
++--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+---------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------------------------------------------+-----+--------+--------------+------+---------+---------+
+| Name                                                                          | DSP | Pragma | Variable     | Op   | Impl    | Latency |
++-------------------------------------------------------------------------------+-----+--------+--------------+------+---------+---------+
+| + cnn_predict                                                                 | 68  |        |              |      |         |         |
+|   add_ln76_fu_463_p2                                                          | -   |        | add_ln76     | add  | fabric  | 0       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U89                                           | -   |        | add_ln87     | add  | fabric  | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U84                                          | -   |        | add_ln178    | add  | fabric  | 0       |
+|   fexp_32ns_32ns_32_8_full_dsp_1_U86                                          | 7   |        | tmp          | fexp | fulldsp | 7       |
+|   fcmp_32ns_32ns_1_2_no_dsp_1_U91                                             | 2   |        | add_i        | fadd | fulldsp | 4       |
+|   fcmp_32ns_32ns_1_2_no_dsp_1_U90                                             | -   |        | div_i        | fdiv | fabric  | 9       |
+|  + cnn_predict_Pipeline_VITIS_LOOP_38_1                                       | 0   |        |              |      |         |         |
+|    add_ln38_fu_482_p2                                                         | -   |        | add_ln38     | add  | fabric  | 0       |
+|  + cnn_predict_Pipeline_VITIS_LOOP_103_6_VITIS_LOOP_104_7_VITIS_LOOP_105_8    | 0   |        |              |      |         |         |
+|    add_ln103_1_fu_241_p2                                                      | -   |        | add_ln103_1  | add  | fabric  | 0       |
+|    add_ln103_fu_256_p2                                                        | -   |        | add_ln103    | add  | fabric  | 0       |
+|    add_ln104_fu_326_p2                                                        | -   |        | add_ln104    | add  | fabric  | 0       |
+|    sub_ln109_fu_412_p2                                                        | -   |        | sub_ln109    | sub  | fabric  | 0       |
+|    sub_ln109_1_fu_456_p2                                                      | -   |        | sub_ln109_1  | sub  | fabric  | 0       |
+|    add_ln113_1_fu_480_p2                                                      | -   |        | add_ln113_1  | add  | fabric  | 0       |
+|    add_ln109_fu_498_p2                                                        | -   |        | add_ln109    | add  | fabric  | 0       |
+|    add_ln109_1_fu_527_p2                                                      | -   |        | add_ln109_1  | add  | fabric  | 0       |
+|    add_ln109_2_fu_570_p2                                                      | -   |        | add_ln109_2  | add  | fabric  | 0       |
+|    add_ln109_3_fu_584_p2                                                      | -   |        | add_ln109_3  | add  | fabric  | 0       |
+|    add_ln109_4_fu_603_p2                                                      | -   |        | add_ln109_4  | add  | fabric  | 0       |
+|    add_ln109_5_fu_617_p2                                                      | -   |        | add_ln109_5  | add  | fabric  | 0       |
+|    add_ln105_fu_628_p2                                                        | -   |        | add_ln105    | add  | fabric  | 0       |
+|    add_ln104_1_fu_634_p2                                                      | -   |        | add_ln104_1  | add  | fabric  | 0       |
+|  + cnn_predict_Pipeline_VITIS_LOOP_77_2_VITIS_LOOP_78_3                       | 0   |        |              |      |         |         |
+|    add_ln77_1_fu_318_p2                                                       | -   |        | add_ln77_1   | add  | fabric  | 0       |
+|    empty_29_fu_344_p2                                                         | -   |        | empty_29     | add  | fabric  | 0       |
+|    p_mid1_fu_358_p2                                                           | -   |        | p_mid1       | add  | fabric  | 0       |
+|    add_ln77_fu_380_p2                                                         | -   |        | add_ln77     | add  | fabric  | 0       |
+|    add_ln90_fu_399_p2                                                         | -   |        | add_ln90     | add  | fabric  | 0       |
+|    add_ln90_1_fu_431_p2                                                       | -   |        | add_ln90_1   | add  | fabric  | 0       |
+|    add_ln90_2_fu_452_p2                                                       | -   |        | add_ln90_2   | add  | fabric  | 0       |
+|    add_ln90_4_fu_462_p2                                                       | -   |        | add_ln90_4   | add  | fabric  | 0       |
+|    add_ln90_5_fu_483_p2                                                       | -   |        | add_ln90_5   | add  | fabric  | 0       |
+|    add_ln90_7_fu_494_p2                                                       | -   |        | add_ln90_7   | add  | fabric  | 0       |
+|    add_ln78_fu_410_p2                                                         | -   |        | add_ln78     | add  | fabric  | 0       |
+|  + cnn_predict_Pipeline_VITIS_LOOP_121_11_VITIS_LOOP_122_12_VITIS_LOOP_123_13 | 51  |        |              |      |         |         |
+|    empty_fu_1012_p2                                                           | -   |        | empty        | add  | fabric  | 0       |
+|    empty_32_fu_1018_p2                                                        | -   |        | empty_32     | add  | fabric  | 0       |
+|    add_ln121_7_fu_1030_p2                                                     | -   |        | add_ln121_7  | add  | fabric  | 0       |
+|    add_ln121_fu_1045_p2                                                       | -   |        | add_ln121    | add  | fabric  | 0       |
+|    add_ln133_fu_1078_p2                                                       | -   |        | add_ln133    | add  | fabric  | 0       |
+|    add_ln121_8_fu_1174_p2                                                     | -   |        | add_ln121_8  | add  | fabric  | 0       |
+|    add_ln121_9_fu_1236_p2                                                     | -   |        | add_ln121_9  | add  | fabric  | 0       |
+|    add_ln121_10_fu_1276_p2                                                    | -   |        | add_ln121_10 | add  | fabric  | 0       |
+|    add_ln121_1_fu_1695_p2                                                     | -   |        | add_ln121_1  | add  | fabric  | 0       |
+|    add_ln121_2_fu_1732_p2                                                     | -   |        | add_ln121_2  | add  | fabric  | 0       |
+|    add_ln121_3_fu_1769_p2                                                     | -   |        | add_ln121_3  | add  | fabric  | 0       |
+|    add_ln121_4_fu_1806_p2                                                     | -   |        | add_ln121_4  | add  | fabric  | 0       |
+|    add_ln121_5_fu_2107_p2                                                     | -   |        | add_ln121_5  | add  | fabric  | 0       |
+|    add_ln121_6_fu_2144_p2                                                     | -   |        | add_ln121_6  | add  | fabric  | 0       |
+|    p_dup45_fu_1321_p2                                                         | -   |        | p_dup45      | add  | fabric  | 0       |
+|    sub_ln135_fu_1369_p2                                                       | -   |        | sub_ln135    | sub  | fabric  | 0       |
+|    mac_muladd_5ns_5ns_5ns_10_4_1_U53                                          | 1   |        | mul_ln139    | mul  | dsp48   | 3       |
+|    p_mid148_fu_1375_p2                                                        | -   |        | p_mid148     | add  | fabric  | 0       |
+|    sub_ln135_1_fu_1831_p2                                                     | -   |        | sub_ln135_1  | sub  | fabric  | 0       |
+|    p_mid150_fu_1389_p2                                                        | -   |        | p_mid150     | add  | fabric  | 0       |
+|    sub_ln135_2_fu_2169_p2                                                     | -   |        | sub_ln135_2  | sub  | fabric  | 0       |
+|    add_ln135_fu_1411_p2                                                       | -   |        | add_ln135    | add  | fabric  | 0       |
+|    add_ln135_1_fu_1844_p2                                                     | -   |        | add_ln135_1  | add  | fabric  | 0       |
+|    add_ln135_2_fu_2185_p2                                                     | -   |        | add_ln135_2  | add  | fabric  | 0       |
+|    mac_muladd_5ns_5ns_5ns_10_4_1_U53                                          | 1   |        | add_ln139    | add  | dsp48   | 3       |
+|    add_ln139_1_fu_2365_p2                                                     | -   |        | add_ln139_1  | add  | fabric  | 0       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U42                                          | 3   |        | mul3_0_0_2   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U43                                          | 3   |        | mul3_0_0_3   | fmul | maxdsp  | 3       |
+|    empty_34_fu_1463_p2                                                        | -   |        | empty_34     | add  | fabric  | 0       |
+|    add_ln135_3_fu_1477_p2                                                     | -   |        | add_ln135_3  | add  | fabric  | 0       |
+|    add_ln135_4_fu_1903_p2                                                     | -   |        | add_ln135_4  | add  | fabric  | 0       |
+|    add_ln135_5_fu_2244_p2                                                     | -   |        | add_ln135_5  | add  | fabric  | 0       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U44                                          | 3   |        | mul3_0_1     | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U45                                          | 3   |        | mul3_0_1_1   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U46                                          | 3   |        | mul3_0_1_2   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U30                                         | 2   |        | sum_9_0_1_2  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U47                                          | 3   |        | mul3_0_1_3   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U30                                         | 2   |        | sum_9_0_1_3  | fadd | fulldsp | 4       |
+|    empty_35_fu_1529_p2                                                        | -   |        | empty_35     | add  | fabric  | 0       |
+|    add_ln135_6_fu_1543_p2                                                     | -   |        | add_ln135_6  | add  | fabric  | 0       |
+|    add_ln135_7_fu_1962_p2                                                     | -   |        | add_ln135_7  | add  | fabric  | 0       |
+|    add_ln135_8_fu_2303_p2                                                     | -   |        | add_ln135_8  | add  | fabric  | 0       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U48                                          | 3   |        | mul3_0_2     | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U30                                         | 2   |        | sum_9_0_2    | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U49                                          | 3   |        | mul3_0_2_1   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U31                                         | 2   |        | sum_9_0_2_1  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U50                                          | 3   |        | mul3_0_2_2   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U31                                         | 2   |        | sum_9_0_2_2  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U51                                          | 3   |        | mul3_0_2_3   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U31                                         | 2   |        | sum_9_0_2_3  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U32                                         | 2   |        | sum_9_1      | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U32                                         | 2   |        | sum_9_1_0_1  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U42                                          | 3   |        | mul3_1_0_2   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U32                                         | 2   |        | sum_9_1_0_2  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U43                                          | 3   |        | mul3_1_0_3   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U33                                         | 2   |        | sum_9_1_0_3  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U44                                          | 3   |        | mul3_1_1     | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U33                                         | 2   |        | sum_9_1_1    | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U45                                          | 3   |        | mul3_1_1_1   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U33                                         | 2   |        | sum_9_1_1_1  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U46                                          | 3   |        | mul3_1_1_2   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U34                                         | 2   |        | sum_9_1_1_2  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U47                                          | 3   |        | mul3_1_1_3   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U34                                         | 2   |        | sum_9_1_1_3  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U48                                          | 3   |        | mul3_1_2     | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U34                                         | 2   |        | sum_9_1_2    | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U49                                          | 3   |        | mul3_1_2_1   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U35                                         | 2   |        | sum_9_1_2_1  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U50                                          | 3   |        | mul3_1_2_2   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U35                                         | 2   |        | sum_9_1_2_2  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U51                                          | 3   |        | mul3_1_2_3   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U35                                         | 2   |        | sum_9_1_2_3  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U36                                         | 2   |        | sum_9_2      | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U36                                         | 2   |        | sum_9_2_0_1  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U42                                          | 3   |        | mul3_2_0_2   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U36                                         | 2   |        | sum_9_2_0_2  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U43                                          | 3   |        | mul3_2_0_3   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U37                                         | 2   |        | sum_9_2_0_3  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U44                                          | 3   |        | mul3_2_1     | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U37                                         | 2   |        | sum_9_2_1    | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U45                                          | 3   |        | mul3_2_1_1   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U37                                         | 2   |        | sum_9_2_1_1  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U46                                          | 3   |        | mul3_2_1_2   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U38                                         | 2   |        | sum_9_2_1_2  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U47                                          | 3   |        | mul3_2_1_3   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U38                                         | 2   |        | sum_9_2_1_3  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U48                                          | 3   |        | mul3_2_2     | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U38                                         | 2   |        | sum_9_2_2    | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U49                                          | 3   |        | mul3_2_2_1   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U39                                         | 2   |        | sum_9_2_2_1  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U50                                          | 3   |        | mul3_2_2_2   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U39                                         | 2   |        | sum_9_2_2_2  | fadd | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U51                                          | 3   |        | mul3_2_2_3   | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U39                                         | 2   |        | sum_9_2_2_3  | fadd | fulldsp | 4       |
+|    add_ln122_fu_1595_p2                                                       | -   |        | add_ln122    | add  | fabric  | 0       |
+|  + cnn_predict_Pipeline_VITIS_LOOP_147_17_VITIS_LOOP_148_18_VITIS_LOOP_149_19 | 0   |        |              |      |         |         |
+|    add_ln147_1_fu_212_p2                                                      | -   |        | add_ln147_1  | add  | fabric  | 0       |
+|    add_ln147_fu_274_p2                                                        | -   |        | add_ln147    | add  | fabric  | 0       |
+|    add_ln148_fu_333_p2                                                        | -   |        | add_ln148    | add  | fabric  | 0       |
+|    mul_5ns_6ns_10_1_1_U63                                                     | -   |        | mul_ln153    | mul  | auto    | 0       |
+|    mul_5ns_6ns_10_1_1_U64                                                     | -   |        | mul_ln153_1  | mul  | auto    | 0       |
+|    add_ln157_1_fu_454_p2                                                      | -   |        | add_ln157_1  | add  | fabric  | 0       |
+|    add_ln153_fu_472_p2                                                        | -   |        | add_ln153    | add  | fabric  | 0       |
+|    add_ln153_1_fu_486_p2                                                      | -   |        | add_ln153_1  | add  | fabric  | 0       |
+|    add_ln153_2_fu_497_p2                                                      | -   |        | add_ln153_2  | add  | fabric  | 0       |
+|    add_ln153_3_fu_511_p2                                                      | -   |        | add_ln153_3  | add  | fabric  | 0       |
+|    add_ln153_4_fu_532_p2                                                      | -   |        | add_ln153_4  | add  | fabric  | 0       |
+|    add_ln153_5_fu_546_p2                                                      | -   |        | add_ln153_5  | add  | fabric  | 0       |
+|    add_ln153_6_fu_557_p2                                                      | -   |        | add_ln153_6  | add  | fabric  | 0       |
+|    add_ln153_7_fu_571_p2                                                      | -   |        | add_ln153_7  | add  | fabric  | 0       |
+|    add_ln149_fu_582_p2                                                        | -   |        | add_ln149    | add  | fabric  | 0       |
+|    add_ln148_1_fu_227_p2                                                      | -   |        | add_ln148_1  | add  | fabric  | 0       |
+|  + cnn_predict_Pipeline_VITIS_LOOP_167_22_VITIS_LOOP_168_23_VITIS_LOOP_169_24 | 0   |        |              |      |         |         |
+|    add_ln167_2_fu_170_p2                                                      | -   |        | add_ln167_2  | add  | fabric  | 0       |
+|    add_ln167_fu_188_p2                                                        | -   |        | add_ln167    | add  | fabric  | 0       |
+|    add_ln167_1_fu_375_p2                                                      | -   |        | add_ln167_1  | add  | fabric  | 0       |
+|    add_ln168_fu_260_p2                                                        | -   |        | add_ln168    | add  | fabric  | 0       |
+|    add_ln168_1_fu_402_p2                                                      | -   |        | add_ln168_1  | add  | fabric  | 0       |
+|    add_ln170_2_fu_310_p2                                                      | -   |        | add_ln170_2  | add  | fabric  | 0       |
+|    add_ln170_fu_427_p2                                                        | -   |        | add_ln170    | add  | fabric  | 0       |
+|    add_ln169_fu_321_p2                                                        | -   |        | add_ln169    | add  | fabric  | 0       |
+|    add_ln168_2_fu_327_p2                                                      | -   |        | add_ln168_2  | add  | fabric  | 0       |
+|  + cnn_predict_Pipeline_VITIS_LOOP_192_27                                     | 0   |        |              |      |         |         |
+|    add_ln192_fu_106_p2                                                        | -   |        | add_ln192    | add  | fabric  | 0       |
+|  + cnn_predict_Pipeline_VITIS_LOOP_180_26                                     | 0   |        |              |      |         |         |
+|    add_ln180_fu_159_p2                                                        | -   |        | add_ln180    | add  | fabric  | 0       |
++-------------------------------------------------------------------------------+-----+--------+--------------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++-------------------------------------------------------------------------------+------+------+--------+-------------+---------+------+---------+
+| Name                                                                          | BRAM | URAM | Pragma | Variable    | Storage | Impl | Latency |
++-------------------------------------------------------------------------------+------+------+--------+-------------+---------+------+---------+
+| + cnn_predict                                                                 | 314  | 0    |        |             |         |      |         |
+|   layer1_conv_U                                                               | 90   | -    |        | layer1_conv | rom_np  | auto | 1       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U88                                           | 8    | -    |        | layer1_pool | rom_np  | auto | 1       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U84                                          | 16   | -    |        | layer2_conv | rom_np  | auto | 1       |
+|   layer2_pool_U                                                               | 4    | -    |        | layer2_pool | ram_1p  | auto | 1       |
+|   flat_U                                                                      | 4    | -    |        | flat        | ram_1p  | auto | 1       |
+|   dense_U                                                                     | -    | -    |        | dense       | ram_1p  | auto | 1       |
+|   img_read_U                                                                  | 8    | -    | pragma | img_read    | ram_2p  | bram | 1       |
+|   conv1_w_U                                                                   | 10   | -    |        | conv1_w     | rom_np  | auto | 1       |
+|   dense1_b_U                                                                  | -    | -    |        | dense1_b    | rom_1p  | auto | 1       |
+|  + cnn_predict_Pipeline_VITIS_LOOP_121_11_VITIS_LOOP_122_12_VITIS_LOOP_123_13 | 12   | 0    |        |             |         |      |         |
+|    conv2_b_U                                                                  | -    | -    |        | conv2_b     | rom_1p  | auto | 1       |
+|    conv2_w_U                                                                  | 12   | -    |        | conv2_w     | rom_np  | auto | 1       |
+|  + cnn_predict_Pipeline_VITIS_LOOP_192_27                                     | 0    | 0    |        |             |         |      |         |
+|    output_w_U                                                                 | -    | -    |        | output_w    | rom_1p  | auto | 1       |
+|  + cnn_predict_Pipeline_VITIS_LOOP_180_26                                     | 50   | 0    |        |             |         |      |         |
+|    dense1_w_U                                                                 | 50   | -    |        | dense1_w    | rom_1p  | auto | 1       |
++-------------------------------------------------------------------------------+------+------+--------+-------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+------------------------------------+-------------------------------------+----------------------------------------------------------------------------+
+| Type     | Options                            | Location                            | Messages                                                                   |
++----------+------------------------------------+-------------------------------------+----------------------------------------------------------------------------+
+| resource | variable=img_read core=RAM_2P_BRAM | cnn.cpp:51 in cnn_predict, img_read | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
++----------+------------------------------------+-------------------------------------+----------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------+-------------------------------------------------------+-----------------------------------------+
+| Type      | Options                                               | Location                                |
++-----------+-------------------------------------------------------+-----------------------------------------+
+| unroll    | factor=16                                             | cnn.cpp:39 in memcpy                    |
+| interface | m_axi depth=4096 port=img_in offset=slave bundle=gmem | cnn.cpp:52 in cnn_predict, img_in       |
+| interface | s_axilite port=steering_out                           | cnn.cpp:53 in cnn_predict, steering_out |
+| interface | s_axilite port=return                                 | cnn.cpp:54 in cnn_predict, return       |
++-----------+-------------------------------------------------------+-----------------------------------------+
+
+

@@ -1,0 +1,4 @@
+1 warning and 27 errors generated.
+Error while processing /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls/cnn_hls/solution1/.autopilot/db/cnn.pp.0.cpp.
+clang-tidy applied 158 of 158 suggested fixes.
+Suppressed 1 warnings (1 with check filters).

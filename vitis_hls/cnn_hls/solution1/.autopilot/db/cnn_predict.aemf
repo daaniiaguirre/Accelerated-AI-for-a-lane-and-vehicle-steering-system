@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1764075277458">
+  <ports id="1" name="gmem" type="PortType" coreId="2470580528" bitwidth="32" iftype="IfTypeFifo">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="img_in" type="PortType" originalName="img_in" coreId="54" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="steering_out" type="PortType" originalName="steering_out" coreId="0" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="132" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="148" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="149" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="150" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="153" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="158" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="159" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="162" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="163" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="164" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="165" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="168" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="171" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="172" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="173" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="177" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="178" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="181" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="182" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="185" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="186" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="189" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="190" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="193" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="194" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="195" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="196" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="197" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="198" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="201" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="206" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="209" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="212" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="217" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="218" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="219" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="220" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="221" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="222" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="225" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="226" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="227" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="229" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="230" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="232" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="233" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="238" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="239" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="240" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="242" source_obj="//@blocks.2/@node_objs.17" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="243" source_obj="//@blocks.2/@node_objs.18" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="244" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="245" source_obj="//@blocks.2/@node_objs.20" sink_obj="//@blocks.2/@node_objs.21"/>
+  <edges id="246" sink_obj="//@blocks.2/@node_objs.22"/>
+  <edges id="248" source_obj="//@blocks.2/@node_objs.21" sink_obj="//@blocks.2/@node_objs.22"/>
+  <edges id="249" source_obj="//@blocks.2/@node_objs.22" sink_obj="//@blocks.2/@node_objs.23"/>
+  <edges id="253" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="254" source_obj="//@blocks.2/@node_objs.24" sink_obj="//@blocks.2/@node_objs.25"/>
+  <edges id="255" sink_obj="//@blocks.2/@node_objs.26"/>
+  <edges id="257" source_obj="//@blocks.2/@node_objs.25" sink_obj="//@blocks.2/@node_objs.26"/>
+  <edges id="258" source_obj="//@blocks.2/@node_objs.26" sink_obj="//@blocks.2/@node_objs.27"/>
+  <edges id="259" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.28"/>
+  <edges id="262" source_obj="//@blocks.2/@node_objs.28" sink_obj="//@blocks.2/@node_objs.29"/>
+  <edges id="263" sink_obj="//@blocks.2/@node_objs.30"/>
+  <edges id="265" source_obj="//@blocks.2/@node_objs.29" sink_obj="//@blocks.2/@node_objs.30"/>
+  <edges id="266" source_obj="//@blocks.2/@node_objs.30" sink_obj="//@blocks.2/@node_objs.31"/>
+  <edges id="267" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.32"/>
+  <edges id="268" source_obj="//@blocks.2/@node_objs.32" sink_obj="//@blocks.2/@node_objs.33"/>
+  <edges id="269" sink_obj="//@blocks.2/@node_objs.34"/>
+  <edges id="271" source_obj="//@blocks.2/@node_objs.33" sink_obj="//@blocks.2/@node_objs.34"/>
+  <edges id="272" source_obj="//@blocks.2/@node_objs.34" sink_obj="//@blocks.2/@node_objs.35"/>
+  <edges id="273" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.36"/>
+  <edges id="274" source_obj="//@blocks.2/@node_objs.36" sink_obj="//@blocks.2/@node_objs.37"/>
+  <edges id="275" sink_obj="//@blocks.2/@node_objs.38"/>
+  <edges id="277" source_obj="//@blocks.2/@node_objs.37" sink_obj="//@blocks.2/@node_objs.38"/>
+  <edges id="278" source_obj="//@blocks.2/@node_objs.38" sink_obj="//@blocks.2/@node_objs.39"/>
+  <edges id="282" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.40"/>
+  <edges id="283" source_obj="//@blocks.2/@node_objs.40" sink_obj="//@blocks.2/@node_objs.41"/>
+  <edges id="284" sink_obj="//@blocks.2/@node_objs.42"/>
+  <edges id="286" source_obj="//@blocks.2/@node_objs.41" sink_obj="//@blocks.2/@node_objs.42"/>
+  <edges id="287" source_obj="//@blocks.2/@node_objs.42" sink_obj="//@blocks.2/@node_objs.43"/>
+  <edges id="290" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="291" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="292" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="293" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="294" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="295" source_obj="//@blocks.2/@node_objs.19" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="296" source_obj="//@blocks.2/@node_objs.23" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="297" source_obj="//@blocks.2/@node_objs.27" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="298" source_obj="//@blocks.2/@node_objs.31" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="299" source_obj="//@blocks.2/@node_objs.35" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="300" source_obj="//@blocks.2/@node_objs.39" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="301" source_obj="//@blocks.2/@node_objs.43" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="302" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.45"/>
+  <edges id="303" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.45"/>
+  <edges id="304" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.46"/>
+  <edges id="305" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="306" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="309" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="312" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="313" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="314" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="317" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="318" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="319" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="320" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="321" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="324" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="327" source_obj="//@blocks.6/@node_objs.4" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="328" source_obj="//@blocks.6/@node_objs.5" sink_obj="//@blocks.6/@node_objs.6"/>
+  <edges id="332" source_obj="//@blocks.6/@node_objs.6" sink_obj="//@blocks.6/@node_objs.7"/>
+  <edges id="333" source_obj="//@blocks.6/@node_objs.7" sink_obj="//@blocks.6/@node_objs.8"/>
+  <edges id="336" source_obj="//@blocks.6/@node_objs.9" sink_obj="//@ports.2"/>
+  <edges id="337" source_obj="//@blocks.6/@node_objs.8" sink_obj="//@blocks.6/@node_objs.9"/>
+  <edges id="338" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="339" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="340" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="342" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="343" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="346" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="347" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="348" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="349" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="350" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="351" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="352" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="353" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="354" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="355" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="356" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="357" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="358" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="359" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="524" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="525" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="526" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="527" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="528" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="529" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6"/>
+  <edges id="530" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="531" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4" is_back_edge="1"/>
+  <edges id="532" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="533" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="534" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="535" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="536" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="537" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="538" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.2/@node_objs.45"/>
+  <edges id="539" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.45"/>
+  <edges id="540" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.5" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="541" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.5" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="542" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="543" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="544" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="545" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="546" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="547" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.5/@node_objs.4"/>
+  <blocks id="37" name="entry" type="BlockType">
+    <controlOutputObjs>VITIS_LOOP_77_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="f" originalName="f" coreId="0" bitwidth="3" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="img_in_read" originalName="img_in" coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="122" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>img_in</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="final_sum_loc" coreId="1330007625" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="layer1_conv" lineNumber="61" originalName="layer1_conv" fileName="cnn.cpp" fileDirectory=".." rtlName="layer1_conv_U" coreName="RAM_1WnR" implIndex="auto" control="no" opType="rom_np" coreId="84" contextFuncName="cnn_predict" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="61" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="layer1_pool" lineNumber="62" originalName="layer1_pool" fileName="cnn.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U88" coreName="RAM_1WnR" implIndex="auto" control="no" opType="rom_np" coreId="84" contextFuncName="cnn_predict" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="62" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="layer2_conv" lineNumber="64" originalName="layer2_conv" fileName="cnn.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U84" coreName="RAM_1WnR" implIndex="auto" control="no" opType="rom_np" coreId="84" contextFuncName="cnn_predict" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="64" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="layer2_pool" lineNumber="65" originalName="layer2_pool" fileName="cnn.cpp" fileDirectory=".." rtlName="layer2_pool_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="cnn_predict" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="65" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="flat" lineNumber="67" originalName="flat" fileName="cnn.cpp" fileDirectory=".." rtlName="flat_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="cnn_predict" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="67" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="dense" lineNumber="68" originalName="dense" fileName="cnn.cpp" fileDirectory=".." rtlName="dense_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="cnn_predict" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="68" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="trunc_ln" lineNumber="38" fileName="cnn.cpp" fileDirectory=".." rtlName="trunc_ln_reg_690" coreId="2359949868" contextFuncName="memcpy" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="38" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="memcpy"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="sext_ln38" lineNumber="38" fileName="cnn.cpp" fileDirectory=".." rtlName="sext_ln38_fu_444_p1" coreId="0" contextFuncName="memcpy" bitwidth="64" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="38" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="memcpy"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="gmem_addr" lineNumber="38" fileName="cnn.cpp" fileDirectory=".." coreId="2471546176" contextFuncName="memcpy" bitwidth="32" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="38" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="memcpy"/>
+      <dataInputObjs>gmem</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="empty" lineNumber="38" fileName="cnn.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="memcpy" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="38" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="memcpy"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="_ln38" lineNumber="38" fileName="cnn.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U88" coreId="2471554320" contextFuncName="memcpy" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="38" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="memcpy"/>
+      <dataInputObjs>gmem</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <constName>cnn_predict_Pipeline_VITIS_LOOP_38_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="f_write_ln76" lineNumber="76" fileName="cnn.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U84" coreId="2359926634" contextFuncName="cnn_predict" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln76" lineNumber="76" fileName="cnn.cpp" fileDirectory=".." coreId="1869375016" contextFuncName="cnn_predict" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <controlInputObjs>VITIS_LOOP_77_2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn.cpp">
+      <validLinenumbers>61</validLinenumbers>
+      <validLinenumbers>62</validLinenumbers>
+      <validLinenumbers>64</validLinenumbers>
+      <validLinenumbers>65</validLinenumbers>
+      <validLinenumbers>67</validLinenumbers>
+      <validLinenumbers>68</validLinenumbers>
+      <validLinenumbers>38</validLinenumbers>
+      <validLinenumbers>76</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="43" name="VITIS_LOOP_77_2" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>VITIS_LOOP_77_2.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_107_9.preheader</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_77_2.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="f_1" lineNumber="76" originalName="f" fileName="cnn.cpp" fileDirectory=".." coreId="1702065440" contextFuncName="cnn_predict" bitwidth="3" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="icmp_ln76" lineNumber="76" fileName="cnn.cpp" fileDirectory=".." rtlName="icmp_ln76_fu_457_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="cnn_predict" bitwidth="1" opcode="icmp" nodeLabel="10.0" m_display="0" m_delay="0.69" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="add_ln76" lineNumber="76" fileName="cnn.cpp" fileDirectory=".." rtlName="add_ln76_fu_463_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="cnn_predict" bitwidth="3" opcode="add" nodeLabel="10.0" m_display="0" m_delay="0.74" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="br_ln76" lineNumber="76" fileName="cnn.cpp" fileDirectory=".." coreId="1684957506" contextFuncName="cnn_predict" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>VITIS_LOOP_77_2.split</controlInputObjs>
+      <controlInputObjs>VITIS_LOOP_107_9.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn.cpp">
+      <validLinenumbers>76</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="92" name="VITIS_LOOP_77_2.split" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_77_2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_77_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="zext_ln76" lineNumber="76" fileName="cnn.cpp" fileDirectory=".." rtlName="zext_ln76_fu_469_p1" coreId="0" contextFuncName="cnn_predict" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="trunc_ln76" lineNumber="76" fileName="cnn.cpp" fileDirectory=".." rtlName="fcmp_32ns_32ns_1_2_no_dsp_1_U90" coreId="2472148160" contextFuncName="cnn_predict" bitwidth="2" opcode="trunc" nodeLabel="10.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="zext_ln76_1" lineNumber="76" fileName="cnn.cpp" fileDirectory=".." rtlName="zext_ln76_1_fu_478_p1" coreId="1836016430" contextFuncName="cnn_predict" bitwidth="5" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="icmp_ln9" lineNumber="9" fileName="aesl_mux_load.4floatP0A.i2" fileDirectory="../../../../../../../.." rtlName="icmp_ln9_fu_580_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="aesl_mux_load_4floatP0A_i2" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="0.51" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="aesl_mux_load.4floatP0A.i2" linenumber="9" fileDirectory="/" functionName="aesl_mux_load.4floatP0A.i2"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="select_ln9" lineNumber="9" fileName="aesl_mux_load.4floatP0A.i2" fileDirectory="../../../../../../../.." rtlName="select_ln9_fu_585_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="aesl_mux_load_4floatP0A_i2" bitwidth="32" opcode="select" nodeLabel="11.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="aesl_mux_load.4floatP0A.i2" linenumber="9" fileDirectory="/" functionName="aesl_mux_load.4floatP0A.i2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="icmp_ln9_1" lineNumber="9" fileName="aesl_mux_load.4floatP0A.i2" fileDirectory="../../../../../../../.." rtlName="icmp_ln9_1_fu_593_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="aesl_mux_load_4floatP0A_i2" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="0.51" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="aesl_mux_load.4floatP0A.i2" linenumber="9" fileDirectory="/" functionName="aesl_mux_load.4floatP0A.i2"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="icmp_ln9_2" lineNumber="9" fileName="aesl_mux_load.4floatP0A.i2" fileDirectory="../../../../../../../.." rtlName="icmp_ln9_2_fu_598_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="aesl_mux_load_4floatP0A_i2" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="0.51" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="aesl_mux_load.4floatP0A.i2" linenumber="9" fileDirectory="/" functionName="aesl_mux_load.4floatP0A.i2"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="select_ln9_1_i" lineNumber="9" fileName="aesl_mux_load.4floatP0A.i2" fileDirectory="../../../../../../../.." rtlName="select_ln9_1_i_fu_603_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="aesl_mux_load_4floatP0A_i2" bitwidth="32" opcode="select" nodeLabel="11.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="aesl_mux_load.4floatP0A.i2" linenumber="9" fileDirectory="/" functionName="aesl_mux_load.4floatP0A.i2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="empty_38" lineNumber="9" fileName="aesl_mux_load.4floatP0A.i2" fileDirectory="../../../../../../../.." rtlName="empty_38_fu_611_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="aesl_mux_load_4floatP0A_i2" bitwidth="1" opcode="or" nodeLabel="11.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="aesl_mux_load.4floatP0A.i2" linenumber="9" fileDirectory="/" functionName="aesl_mux_load.4floatP0A.i2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="sum" lineNumber="9" fileName="aesl_mux_load.4floatP0A.i2" fileDirectory="../../../../../../../.." rtlName="sum_fu_617_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="aesl_mux_load_4floatP0A_i2" bitwidth="32" opcode="select" nodeLabel="11.0" m_display="0" m_delay="0.52" m_topoIndex="68" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="aesl_mux_load.4floatP0A.i2" linenumber="9" fileDirectory="/" functionName="aesl_mux_load.4floatP0A.i2"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="conv1_w_addr" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="cnn_predict" bitwidth="6" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="conv1_w_load" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="cnn_predict" bitwidth="32" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="xor_ln87" lineNumber="87" fileName="cnn.cpp" fileDirectory=".." rtlName="xor_ln87_fu_482_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="cnn_predict" bitwidth="3" opcode="xor" nodeLabel="10.0" m_display="0" m_delay="0.19" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="87" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="zext_ln92" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="zext_ln92_fu_488_p1" coreId="0" contextFuncName="cnn_predict" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="conv1_w_addr_1" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreId="2471871184" contextFuncName="cnn_predict" bitwidth="6" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="conv1_w_load_1" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="cnn_predict" bitwidth="32" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="zext_ln92_1_cast" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="zext_ln92_1_cast_fu_493_p3" coreId="2471873520" contextFuncName="cnn_predict" bitwidth="4" opcode="bitconcatenate" nodeLabel="10.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="zext_ln92_9" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="zext_ln92_9_fu_501_p1" coreId="0" contextFuncName="cnn_predict" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="conv1_w_addr_2" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreId="1869833586" contextFuncName="cnn_predict" bitwidth="6" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="conv1_w_load_2" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="cnn_predict" bitwidth="32" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="sext_ln92" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="sext_ln92_fu_506_p1" coreId="2471833280" contextFuncName="cnn_predict" bitwidth="4" opcode="sext" nodeLabel="10.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="zext_ln92_10" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="zext_ln92_10_fu_510_p1" coreId="0" contextFuncName="cnn_predict" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="conv1_w_addr_3" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U88" coreId="2360108261" contextFuncName="cnn_predict" bitwidth="6" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="conv1_w_load_3" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U84" coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="cnn_predict" bitwidth="32" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="zext_ln92_3_cast" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="zext_ln92_3_cast_fu_515_p3" coreId="0" contextFuncName="cnn_predict" bitwidth="5" opcode="bitconcatenate" nodeLabel="10.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="zext_ln92_11" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="zext_ln92_11_fu_523_p1" coreId="2471846160" contextFuncName="cnn_predict" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="conv1_w_addr_4" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreId="2471833280" contextFuncName="cnn_predict" bitwidth="6" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="conv1_w_load_4" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="cnn_predict" bitwidth="32" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="add_ln87" lineNumber="87" fileName="cnn.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U89" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="cnn_predict" bitwidth="5" opcode="add" nodeLabel="10.0" m_display="0" m_delay="0.87" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="87" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="zext_ln92_4" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U87" coreId="0" contextFuncName="cnn_predict" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="conv1_w_addr_5" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreId="2471838432" contextFuncName="cnn_predict" bitwidth="6" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="conv1_w_load_5" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="cnn_predict" bitwidth="32" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="sext_ln92_1" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="sext_ln92_1_fu_539_p1" coreId="0" contextFuncName="cnn_predict" bitwidth="5" opcode="sext" nodeLabel="10.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="zext_ln92_12" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="zext_ln92_12_fu_543_p1" coreId="2471854592" contextFuncName="cnn_predict" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="conv1_w_addr_6" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U88" coreId="0" contextFuncName="cnn_predict" bitwidth="6" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="conv1_w_load_6" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U84" coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="cnn_predict" bitwidth="32" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="sext_ln92_2" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="sext_ln92_2_fu_548_p1" coreId="2360129784" contextFuncName="cnn_predict" bitwidth="5" opcode="sext" nodeLabel="10.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="zext_ln92_13" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="zext_ln92_13_fu_552_p1" coreId="2471859232" contextFuncName="cnn_predict" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="conv1_w_addr_7" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreId="2471860264" contextFuncName="cnn_predict" bitwidth="6" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="conv1_w_load_7" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="cnn_predict" bitwidth="32" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="zext_ln92_7_cast" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="fcmp_32ns_32ns_1_2_no_dsp_1_U90" coreId="7955819" contextFuncName="cnn_predict" bitwidth="6" opcode="bitconcatenate" nodeLabel="10.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="zext_ln92_14" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U87" coreId="2471805824" contextFuncName="cnn_predict" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="conv1_w_addr_8" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="cnn_predict" bitwidth="6" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="conv1_w_load_8" lineNumber="92" fileName="cnn.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="cnn_predict" bitwidth="32" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="92" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="_ln76" lineNumber="76" fileName="cnn.cpp" fileDirectory=".." rtlName="grp_cnn_predict_Pipeline_VITIS_LOOP_77_2_VITIS_LOOP_78_3_fu_345" coreId="2471807048" contextFuncName="cnn_predict" opcode="call" nodeLabel="11.0" nodeLatency="1" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <constName>cnn_predict_Pipeline_VITIS_LOOP_77_2_VITIS_LOOP_78_3</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="f_write_ln76" lineNumber="76" fileName="cnn.cpp" fileDirectory=".." rtlName="fcmp_32ns_32ns_1_2_no_dsp_1_U90" coreId="2360213404" contextFuncName="cnn_predict" opcode="store" nodeLabel="10.0" m_display="0" m_delay="0.48" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="br_ln76" lineNumber="76" fileName="cnn.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U88" coreId="608" contextFuncName="cnn_predict" opcode="br" nodeLabel="12.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="76" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <controlInputObjs>VITIS_LOOP_77_2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="aesl_mux_load.4floatP0A.i2">
+      <validLinenumbers>9</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="cnn.cpp">
+      <validLinenumbers>76</validLinenumbers>
+      <validLinenumbers>92</validLinenumbers>
+      <validLinenumbers>87</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="100" name="VITIS_LOOP_107_9.preheader" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_77_2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_180_26</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="i_1" originalName="i" coreId="0" bitwidth="5" opcode="alloca" nodeLabel="10.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="_ln0" rtlName="grp_cnn_predict_Pipeline_VITIS_LOOP_103_6_VITIS_LOOP_104_7_VITIS_LOOP_105_8_fu_339" coreId="0" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>cnn_predict_Pipeline_VITIS_LOOP_103_6_VITIS_LOOP_104_7_VITIS_LOOP_105_8</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="_ln0" rtlName="grp_cnn_predict_Pipeline_VITIS_LOOP_121_11_VITIS_LOOP_122_12_VITIS_LOOP_123_13_fu_372" coreId="480" opcode="call" nodeLabel="14.0" nodeLatency="1" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>cnn_predict_Pipeline_VITIS_LOOP_121_11_VITIS_LOOP_122_12_VITIS_LOOP_123_13</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="_ln0" rtlName="grp_cnn_predict_Pipeline_VITIS_LOOP_147_17_VITIS_LOOP_148_18_VITIS_LOOP_149_19_fu_382" coreId="2360209293" opcode="call" nodeLabel="16.0" nodeLatency="1" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>cnn_predict_Pipeline_VITIS_LOOP_147_17_VITIS_LOOP_148_18_VITIS_LOOP_149_19</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="_ln0" rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U89" coreId="176" opcode="call" nodeLabel="18.0" nodeLatency="1" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>cnn_predict_Pipeline_VITIS_LOOP_167_22_VITIS_LOOP_168_23_VITIS_LOOP_169_24</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="i_1_write_ln178" lineNumber="178" fileName="cnn.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U87" coreId="2471813520" contextFuncName="cnn_predict" opcode="store" nodeLabel="10.0" m_display="0" m_delay="0.48" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="178" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="br_ln178" lineNumber="178" fileName="cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="cnn_predict" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="178" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <controlInputObjs>VITIS_LOOP_180_26</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn.cpp">
+      <validLinenumbers>178</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="106" name="VITIS_LOOP_180_26" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_107_9.preheader</controlInputObjs>
+    <controlInputObjs>VITIS_LOOP_180_26.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc321.preheader</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_180_26.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="i" lineNumber="178" originalName="i" fileName="cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="cnn_predict" bitwidth="5" opcode="load" nodeLabel="20.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="178" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="icmp_ln178" lineNumber="178" fileName="cnn.cpp" fileDirectory=".." rtlName="icmp_ln178_fu_629_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="cnn_predict" bitwidth="1" opcode="icmp" nodeLabel="20.0" m_display="0" m_delay="0.87" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="178" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="add_ln178" lineNumber="178" fileName="cnn.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U84" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="cnn_predict" bitwidth="5" opcode="add" nodeLabel="20.0" m_display="0" m_delay="0.87" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="178" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="br_ln178" lineNumber="178" fileName="cnn.cpp" fileDirectory=".." coreId="2471818992" contextFuncName="cnn_predict" opcode="br" nodeLabel="20.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="178" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>VITIS_LOOP_180_26.split</controlInputObjs>
+      <controlInputObjs>for.inc321.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn.cpp">
+      <validLinenumbers>178</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="115" name="VITIS_LOOP_180_26.split" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_180_26</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_180_26</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="zext_ln178" lineNumber="178" fileName="cnn.cpp" fileDirectory=".." rtlName="zext_ln178_fu_641_p1" coreId="0" contextFuncName="cnn_predict" bitwidth="64" opcode="zext" nodeLabel="20.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="178" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="trunc_ln178" lineNumber="178" fileName="cnn.cpp" fileDirectory=".." rtlName="trunc_ln178_fu_646_p1" coreId="2471823112" contextFuncName="cnn_predict" bitwidth="4" opcode="trunc" nodeLabel="20.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="178" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="dense1_b_addr" lineNumber="179" fileName="cnn.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U87" coreId="0" contextFuncName="cnn_predict" bitwidth="4" opcode="getelementptr" nodeLabel="20.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="179" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="sum_3" lineNumber="179" originalName="sum" fileName="cnn.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="cnn_predict" bitwidth="32" opcode="load" nodeLabel="20.0" nodeLatency="1" m_display="0" m_delay="0.79" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="179" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="_ln179" lineNumber="179" fileName="cnn.cpp" fileDirectory=".." rtlName="grp_cnn_predict_Pipeline_VITIS_LOOP_180_26_fu_402" coreId="2471825688" contextFuncName="cnn_predict" opcode="call" nodeLabel="21.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="179" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>cnn_predict_Pipeline_VITIS_LOOP_180_26</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="i_1_write_ln178" lineNumber="178" fileName="cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="cnn_predict" opcode="store" nodeLabel="20.0" m_display="0" m_delay="0.48" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="178" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="br_ln178" lineNumber="178" fileName="cnn.cpp" fileDirectory=".." rtlName="fcmp_32ns_32ns_1_2_no_dsp_1_U91" coreId="0" contextFuncName="cnn_predict" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="178" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <controlInputObjs>VITIS_LOOP_180_26</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn.cpp">
+      <validLinenumbers>178</validLinenumbers>
+      <validLinenumbers>179</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="127" name="for.inc321.preheader" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_180_26</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="_ln0" rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U84" coreId="2470972624" opcode="call" nodeLabel="20.0" nodeLatency="1" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>cnn_predict_Pipeline_VITIS_LOOP_192_27</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="final_sum_loc_load" coreId="1702258035" bitwidth="32" opcode="load" nodeLabel="24.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="bitcast_ln34" lineNumber="34" fileName="cnn.cpp" fileDirectory=".." rtlName="bitcast_ln34_fu_658_p1" coreId="2471829904" contextFuncName="sigmoid" bitwidth="32" opcode="bitcast" nodeLabel="24.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="34" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="sigmoid"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="xor_ln34" lineNumber="34" fileName="cnn.cpp" fileDirectory=".." rtlName="xor_ln34_fu_662_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="sigmoid" bitwidth="32" opcode="xor" nodeLabel="24.0" m_display="0" m_delay="0.4" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="34" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="sigmoid"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="bitcast_ln34_1" lineNumber="34" originalName="x" fileName="cnn.cpp" fileDirectory=".." rtlName="grp_fu_424_p1" coreId="2471834032" contextFuncName="sigmoid" bitwidth="32" opcode="bitcast" nodeLabel="24.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="34" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="sigmoid"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>fexp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="tmp" lineNumber="17" fileName="/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp" fileDirectory="../../../../../../../../wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath" rtlName="fexp_32ns_32ns_32_8_full_dsp_1_U86" coreName="FExp_fulldsp" implIndex="fulldsp" control="no" opType="fexp" coreId="23" contextFuncName="exp" bitwidth="32" opcode="fexp" nodeLabel="24.0" nodeLatency="7" m_display="0" m_delay="6.0" m_topoIndex="91" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp" linenumber="17" fileDirectory="/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath" functionName="exp"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="122" name="add_i" lineNumber="34" fileName="cnn.cpp" fileDirectory=".." rtlName="fcmp_32ns_32ns_1_2_no_dsp_1_U91" coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fadd" coreId="18" contextFuncName="sigmoid" bitwidth="32" opcode="fadd" nodeLabel="32.0" nodeLatency="4" m_display="0" m_delay="6.01" m_topoIndex="92" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="34" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="sigmoid"/>
+      <dataInputObjs>fexp</dataInputObjs>
+      <dataOutputObjs>fdiv</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="div_i" lineNumber="34" fileName="cnn.cpp" fileDirectory=".." rtlName="fcmp_32ns_32ns_1_2_no_dsp_1_U90" coreName="FDiv" implIndex="fabric" control="no" opType="fdiv" coreId="20" contextFuncName="sigmoid" bitwidth="32" opcode="fdiv" nodeLabel="37.0" nodeLatency="9" m_display="0" m_delay="6.7" m_topoIndex="93" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="34" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="sigmoid"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="124" name="bitcast_ln197" lineNumber="197" fileName="cnn.cpp" fileDirectory=".." rtlName="steering_out" coreId="2471851088" contextFuncName="cnn_predict" bitwidth="32" opcode="bitcast" nodeLabel="47.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="197" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>fdiv</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="steering_out_write_ln197" lineNumber="197" fileName="cnn.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="122" contextFuncName="cnn_predict" opcode="write" nodeLabel="47.0" m_display="0" m_delay="1.0" m_topoIndex="95" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="197" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>steering_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="126" name="_ln198" lineNumber="198" fileName="cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="cnn_predict" opcode="ret" nodeLabel="47.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnn.cpp" linenumber="198" fileDirectory="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_hls" functionName="cnn_predict"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn.cpp">
+      <validLinenumbers>34</validLinenumbers>
+      <validLinenumbers>197</validLinenumbers>
+      <validLinenumbers>198</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp">
+      <validLinenumbers>17</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <ScheduleInfo time="34"/>
+  <ScheduleInfo time="35"/>
+  <ScheduleInfo time="36"/>
+  <ScheduleInfo time="37"/>
+  <ScheduleInfo time="38"/>
+  <ScheduleInfo time="39"/>
+  <ScheduleInfo time="40"/>
+  <ScheduleInfo time="41"/>
+  <ScheduleInfo time="42"/>
+  <ScheduleInfo time="43"/>
+  <ScheduleInfo time="44"/>
+  <ScheduleInfo time="45"/>
+  <ScheduleInfo time="46"/>
+  <ScheduleInfo time="47"/>
+  <regnodes realName="conv1_w_addr_1_reg_717">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="div_i_reg_848">
+    <nodeIds>123</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_reg_696">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="final_sum_loc_reg_684">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_addr_6_reg_742">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="sum_3_reg_828">
+    <nodeIds>111</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_load_5_reg_794">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln34_1_reg_833">
+    <nodeIds>120</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_load_3_reg_784">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_load_8_reg_809">
+    <nodeIds>88</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_addr_5_reg_737">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_838">
+    <nodeIds>121</nodeIds>
+  </regnodes>
+  <regnodes realName="f_reg_677">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_addr_2_reg_722">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_load_6_reg_799">
+    <nodeIds>80</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_addr_8_reg_752">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="add_i_reg_843">
+    <nodeIds>122</nodeIds>
+  </regnodes>
+  <regnodes realName="sum_reg_764">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_757">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_addr_3_reg_727">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_load_2_reg_779">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln_reg_690">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln76_reg_704">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_load_4_reg_789">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_addr_4_reg_732">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_load_reg_769">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_load_7_reg_804">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_load_1_reg_774">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln178_reg_817">
+    <nodeIds>108</nodeIds>
+  </regnodes>
+  <regnodes realName="dense1_b_addr_reg_823">
+    <nodeIds>110</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_addr_reg_712">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="conv1_w_addr_7_reg_747">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <expressionNodes realName="conv1_w_addr_7_gep_fu_301">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln178_fu_635">
+    <nodeIds>104</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln92_fu_506">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln92_1_fu_539">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv1_w_addr_4_gep_fu_277">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer1_conv_alloca_fu_160">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv1_w_addr_2_gep_fu_261">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln87_fu_482">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln178_fu_629">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv1_w_addr_5_gep_fu_285">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln92_fu_488">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln34_1_fu_668">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln9_1_fu_593">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_38_fu_611">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln92_2_fu_548">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer1_pool_alloca_fu_164">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv1_w_addr_gep_fu_208">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln76_fu_457">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln34_fu_662">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln76_fu_463">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln92_14_fu_565">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln92_9_fu_501">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_429">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln9_fu_580">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln76_1_fu_478">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="f_fu_152">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln38_fu_444">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv1_w_addr_1_gep_fu_253">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer2_pool_alloca_fu_172">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln92_3_cast_fu_515">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln92_10_fu_510">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv1_w_addr_8_gep_fu_309">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer2_conv_alloca_fu_168">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln34_fu_658">
+    <nodeIds>118</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_184">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln92_4_fu_534">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln76_fu_474">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln92_13_fu_552">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sum_fu_617">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln92_7_cast_fu_557">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dense_alloca_fu_180">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln178_fu_646">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="final_sum_loc_fu_156">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_fu_447">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln76_fu_469">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln178_fu_641">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dense1_b_addr_gep_fu_317">
+    <nodeIds>110</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln9_2_fu_598">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln9_1_i_fu_603">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln92_11_fu_523">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln197_fu_673">
+    <nodeIds>124</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln87_fu_528">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv1_w_addr_3_gep_fu_269">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="flat_alloca_fu_176">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln92_12_fu_543">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv1_w_addr_6_gep_fu_293">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln9_fu_585">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln92_1_cast_fu_493">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_419">
+    <nodeIds>123</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_predict_Pipeline_VITIS_LOOP_147_17_VITIS_LOOP_148_18_VITIS_LOOP_149_19_fu_382">
+    <nodeIds>96</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_predict_Pipeline_VITIS_LOOP_167_22_VITIS_LOOP_168_23_VITIS_LOOP_169_24_fu_388">
+    <nodeIds>97</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_predict_Pipeline_VITIS_LOOP_192_27_fu_394">
+    <nodeIds>116</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_424">
+    <nodeIds>121</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_414">
+    <nodeIds>122</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_predict_Pipeline_VITIS_LOOP_121_11_VITIS_LOOP_122_12_VITIS_LOOP_123_13_fu_372">
+    <nodeIds>95</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_predict_Pipeline_VITIS_LOOP_180_26_fu_402">
+    <nodeIds>112</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_predict_Pipeline_VITIS_LOOP_38_1_fu_330">
+    <nodeIds>34</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_predict_Pipeline_VITIS_LOOP_77_2_VITIS_LOOP_78_3_fu_345">
+    <nodeIds>89</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_predict_Pipeline_VITIS_LOOP_103_6_VITIS_LOOP_104_7_VITIS_LOOP_105_8_fu_339">
+    <nodeIds>94</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="i_load_fu_626">
+    <nodeIds>101</nodeIds>
+  </ioNodes>
+  <ioNodes realName="final_sum_loc_load_load_fu_655">
+    <nodeIds>117</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln178_store_fu_575">
+    <nodeIds>98</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln76_store_fu_570">
+    <nodeIds>90</nodeIds>
+  </ioNodes>
+  <ioNodes realName="f_1_load_fu_454">
+    <nodeIds>38</nodeIds>
+  </ioNodes>
+  <ioNodes realName="img_in_read_read_fu_188">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln178_store_fu_650">
+    <nodeIds>113</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln197_write_fu_201">
+    <nodeIds>125</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln76_store_fu_439">
+    <nodeIds>35</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_194">
+    <nodeIds>33</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="conv1_w">
+    <nodeIds>88</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv1_w" portID="1">
+    <nodeIds>84</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv1_w" portID="2">
+    <nodeIds>80</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv1_w" portID="3">
+    <nodeIds>76</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv1_w" portID="4">
+    <nodeIds>72</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv1_w" portID="5">
+    <nodeIds>68</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv1_w" portID="6">
+    <nodeIds>64</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv1_w" portID="7">
+    <nodeIds>60</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv1_w" portID="8">
+    <nodeIds>56</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv2_b" portID="100">
+    <nodeIds>95</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv2_w" portID="100">
+    <nodeIds>95</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dense1_b">
+    <nodeIds>111</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dense1_w" portID="100">
+    <nodeIds>112</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="img_read" portID="100">
+    <nodeIds>34</nodeIds>
+    <nodeIds>89</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="output_w" portID="100">
+    <nodeIds>116</nodeIds>
+  </memoryPorts>
+  <ioPorts name="gmem">
+    <contents name="call">
+      <nodeIds>34</nodeIds>
+    </contents>
+    <contents name="readreq">
+      <nodeIds>33</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="img_in">
+    <contents name="read">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="steering_out">
+    <contents name="write">
+      <nodeIds>125</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="7" latency="7"/>
+    </states>
+    <states id="3">
+      <operations id="33" stage="6" latency="7"/>
+    </states>
+    <states id="4">
+      <operations id="33" stage="5" latency="7"/>
+    </states>
+    <states id="5">
+      <operations id="33" stage="4" latency="7"/>
+    </states>
+    <states id="6">
+      <operations id="33" stage="3" latency="7"/>
+    </states>
+    <states id="7">
+      <operations id="33" stage="2" latency="7"/>
+    </states>
+    <states id="8">
+      <operations id="33" stage="1" latency="7"/>
+    </states>
+    <states id="9">
+      <operations id="34" stage="2" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="2"/>
+      <operations id="36" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="2" latency="2"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="2" latency="2"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="2" latency="2"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="2" latency="2"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="2" latency="2"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="2" latency="2"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="2" latency="2"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="2" latency="2"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="2" latency="2"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="2" latency="2"/>
+      <operations id="98" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="2"/>
+      <operations id="60" stage="1" latency="2"/>
+      <operations id="64" stage="1" latency="2"/>
+      <operations id="68" stage="1" latency="2"/>
+      <operations id="72" stage="1" latency="2"/>
+      <operations id="76" stage="1" latency="2"/>
+      <operations id="80" stage="1" latency="2"/>
+      <operations id="84" stage="1" latency="2"/>
+      <operations id="88" stage="1" latency="2"/>
+      <operations id="89" stage="2" latency="2"/>
+    </states>
+    <states id="13">
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="2"/>
+      <operations id="91" stage="1" latency="1"/>
+    </states>
+    <states id="14">
+      <operations id="94" stage="1" latency="2"/>
+    </states>
+    <states id="15">
+      <operations id="95" stage="2" latency="2"/>
+    </states>
+    <states id="16">
+      <operations id="95" stage="1" latency="2"/>
+    </states>
+    <states id="17">
+      <operations id="96" stage="2" latency="2"/>
+    </states>
+    <states id="18">
+      <operations id="96" stage="1" latency="2"/>
+    </states>
+    <states id="19">
+      <operations id="97" stage="2" latency="2"/>
+    </states>
+    <states id="20">
+      <operations id="97" stage="1" latency="2"/>
+      <operations id="99" stage="1" latency="1"/>
+    </states>
+    <states id="21">
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="2" latency="2"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="116" stage="2" latency="2"/>
+    </states>
+    <states id="22">
+      <operations id="111" stage="1" latency="2"/>
+      <operations id="112" stage="2" latency="2"/>
+    </states>
+    <states id="23">
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="2"/>
+      <operations id="114" stage="1" latency="1"/>
+    </states>
+    <states id="24">
+      <operations id="116" stage="1" latency="2"/>
+    </states>
+    <states id="25">
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="8" latency="8"/>
+    </states>
+    <states id="26">
+      <operations id="121" stage="7" latency="8"/>
+    </states>
+    <states id="27">
+      <operations id="121" stage="6" latency="8"/>
+    </states>
+    <states id="28">
+      <operations id="121" stage="5" latency="8"/>
+    </states>
+    <states id="29">
+      <operations id="121" stage="4" latency="8"/>
+    </states>
+    <states id="30">
+      <operations id="121" stage="3" latency="8"/>
+    </states>
+    <states id="31">
+      <operations id="121" stage="2" latency="8"/>
+    </states>
+    <states id="32">
+      <operations id="121" stage="1" latency="8"/>
+    </states>
+    <states id="33">
+      <operations id="122" stage="5" latency="5"/>
+    </states>
+    <states id="34">
+      <operations id="122" stage="4" latency="5"/>
+    </states>
+    <states id="35">
+      <operations id="122" stage="3" latency="5"/>
+    </states>
+    <states id="36">
+      <operations id="122" stage="2" latency="5"/>
+    </states>
+    <states id="37">
+      <operations id="122" stage="1" latency="5"/>
+    </states>
+    <states id="38">
+      <operations id="123" stage="10" latency="10"/>
+    </states>
+    <states id="39">
+      <operations id="123" stage="9" latency="10"/>
+    </states>
+    <states id="40">
+      <operations id="123" stage="8" latency="10"/>
+    </states>
+    <states id="41">
+      <operations id="123" stage="7" latency="10"/>
+    </states>
+    <states id="42">
+      <operations id="123" stage="6" latency="10"/>
+    </states>
+    <states id="43">
+      <operations id="123" stage="5" latency="10"/>
+    </states>
+    <states id="44">
+      <operations id="123" stage="4" latency="10"/>
+    </states>
+    <states id="45">
+      <operations id="123" stage="3" latency="10"/>
+    </states>
+    <states id="46">
+      <operations id="123" stage="2" latency="10"/>
+    </states>
+    <states id="47">
+      <operations id="123" stage="1" latency="10"/>
+    </states>
+    <states id="48">
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="34" outState="35">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="35" outState="36">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="36" outState="37">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="37" outState="38">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="38" outState="39">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="39" outState="40">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="40" outState="41">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="41" outState="42">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="42" outState="43">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="43" outState="44">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="44" outState="45">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="45" outState="46">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="46" outState="47">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="47" outState="48">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="cnn_predict" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="209225" mMaxLatency="209225">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4108" mMaxLatency="4108">
+      <basicBlocks>37</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_76_1" mII="-1" mDepth="-1" mMinTripCount="4" mMaxTripCount="4" mMinLatency="77100" mMaxLatency="77100" mType="1">
+      <basicBlocks>43</basicBlocks>
+      <basicBlocks>92</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="27375" mMaxLatency="27375">
+      <basicBlocks>100</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="VITIS_LOOP_178_25" mII="-1" mDepth="-1" mMinTripCount="16" mMaxTripCount="16" mMinLatency="100544" mMaxLatency="100544" mType="1">
+      <basicBlocks>106</basicBlocks>
+      <basicBlocks>115</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="96" mMaxLatency="96">
+      <basicBlocks>127</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

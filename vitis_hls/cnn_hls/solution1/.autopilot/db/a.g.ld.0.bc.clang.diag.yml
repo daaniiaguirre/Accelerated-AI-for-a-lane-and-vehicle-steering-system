@@ -1,0 +1,227 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: '/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/c++/expfloat.cpp', 
+                   Line: 17, Column: 9 }
+Function:        _ZN3hls3expEf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'exp_reduce_::exp(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::exp(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/c++/expfloat.cpp', 
+                       Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: cnn.cpp, Line: 34, Column: 27 }
+Function:        _Z7sigmoidf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::exp(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/c++/expfloat.cpp', 
+                       Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'sigmoid(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 32, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+Function:        _Z6memcpyPfS_i
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_38_1
+  - String:          ''' ('
+  - LoopLoc:         'cnn.cpp:38:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          memcpy
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+Function:        _Z11cnn_predictPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'memcpy(float*, float*, int)'
+    DebugLoc:        { File: cnn.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_predict(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+Function:        _Z11cnn_predictPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 28, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_predict(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+Function:        _Z11cnn_predictPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sigmoid(float)'
+    DebugLoc:        { File: cnn.cpp, Line: 32, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_predict(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: cnn.cpp, Line: 38, Column: 19 }
+Function:        _Z11cnn_predictPfS_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.i.load.34
+  - String:          ', '
+  - String:          for.inc.i.load.39
+  - String:          ', '
+  - String:          for.inc.i.load.44
+  - String:          ', '
+  - String:          for.inc.i.load.49
+  - String:          ', '
+  - String:          for.inc.i.load.54
+  - String:          ', '
+  - String:          for.inc.i.load.59
+  - String:          ', '
+  - String:          for.inc.i.load.64
+  - String:          ', '
+  - String:          for.inc.i.load.69
+  - String:          ', '
+  - String:          for.inc.i.load.74
+  - String:          ', '
+  - String:          for.inc.i.load.79
+  - String:          ', '
+  - String:          for.inc.i.load.84
+  - String:          ', '
+  - String:          for.inc.i.load.89
+  - String:          ', '
+  - String:          for.inc.i.load.94
+  - String:          ', '
+  - String:          for.inc.i.load.99
+  - String:          ', '
+  - String:          for.inc.i.load.104
+  - String:          ', '
+  - String:          for.inc.i.load.109
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        img_inseq
+  - String:          ' '
+  - ArrayName:       img_in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_38_1
+  - String:          ' '
+  - LoopLoc:         'cnn.cpp:38:19'
+  - String:          ' '
+  - Function:        'cnn_predict(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: cnn.cpp, Line: 38, Column: 19 }
+Function:        _Z11cnn_predictPfS_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        img_inseq
+  - String:          ' '
+  - ArrayName:       img_in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_38_1
+  - String:          ' '
+  - LoopLoc:         'cnn.cpp:38:19'
+  - String:          ' '
+  - Function:        'cnn_predict(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: cnn.cpp, Line: 38, Column: 19 }
+Function:        _Z11cnn_predictPfS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_38_1
+  - String:          ' '
+  - LoopLoc:         'cnn.cpp:38:19'
+  - String:          ' '
+  - Function:        'cnn_predict(float*, float*)'
+    DebugLoc:        { File: cnn.cpp, Line: 46, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: cnn.cpp, Line: 38, Column: 19 }
+Function:        _Z11cnn_predictPfS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_38_1
+  - String:          '''('
+  - LoopLoc:         'cnn.cpp:38:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

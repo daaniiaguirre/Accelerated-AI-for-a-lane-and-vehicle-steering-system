@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <packageLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'img_read' will not be exposed as RTL port." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:54:36.238+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:54:36.224+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'cnn_predict_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_ARUSER' to 0." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:54:33.503+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'cnn_predict_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_ARREGION' to 0." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:54:33.503+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'cnn_predict_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_ARQOS' to 0." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:54:33.502+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'cnn_predict_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_ARPROT' to 0." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:54:33.501+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'cnn_predict_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_ARCACHE' to 0." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:54:33.500+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'cnn_predict_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_ARLOCK' to 0." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:54:33.499+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'cnn_predict_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_ARBURST' to 0." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:54:33.498+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'cnn_predict_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_ARSIZE' to 0." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:54:33.497+0100" type="Warning"/>
+      </synLog>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_predict_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:56:35.297+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_predict_fexp_32ns_32ns_32_8_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:56:34.987+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_predict_fdiv_32ns_32ns_32_10_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:56:34.688+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_predict_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:56:34.408+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_predict_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:56:34.116+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_predict_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:55:23.669+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_predict_fexp_32ns_32ns_32_8_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:55:23.361+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_predict_fdiv_32ns_32ns_32_10_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:55:23.063+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_predict_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:55:22.784+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_predict_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2025-11-25T13:55:22.491+0100" type="Warning"/>
+      </packageLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

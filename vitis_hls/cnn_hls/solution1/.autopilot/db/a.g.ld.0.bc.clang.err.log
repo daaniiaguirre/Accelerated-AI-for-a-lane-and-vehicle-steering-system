@@ -1,0 +1,10 @@
+remark: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/c++/expfloat.cpp:17:9: Inlining function 'exp_reduce_::exp(float)' into 'hls::exp(float)'
+remark: cnn.cpp:34:27: Inlining function 'hls::exp(float)' into 'sigmoid(float)'
+remark: cnn.cpp:37:0: Unrolling loop 'VITIS_LOOP_38_1' (cnn.cpp:38:19) in function 'memcpy' partially with a factor of 16
+remark: cnn.cpp:46:0: Inlining function 'memcpy(float*, float*, int)' into 'cnn_predict(float*, float*)'
+remark: cnn.cpp:46:0: Inlining function 'relu(float)' into 'cnn_predict(float*, float*)'
+remark: cnn.cpp:46:0: Inlining function 'sigmoid(float)' into 'cnn_predict(float*, float*)'
+remark: cnn.cpp:38:19: Sequential read of length 4096 has been inferred _XLX_SEP_ OldID=for.inc.i.load.34, for.inc.i.load.39, for.inc.i.load.44, for.inc.i.load.49, for.inc.i.load.54, for.inc.i.load.59, for.inc.i.load.64, for.inc.i.load.69, for.inc.i.load.74, for.inc.i.load.79, for.inc.i.load.84, for.inc.i.load.89, for.inc.i.load.94, for.inc.i.load.99, for.inc.i.load.104, for.inc.i.load.109,  _XLX_SEP_ img_inseq img_in gmem VITIS_LOOP_38_1 cnn.cpp:38:19 cnn_predict(float*, float*) 
+remark: cnn.cpp:38:19: Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 _XLX_SEP_ img_inseq img_in gmem VITIS_LOOP_38_1 cnn.cpp:38:19 cnn_predict(float*, float*) 
+remark: cnn.cpp:38:19: Multiple burst reads of length 4096 and bit width 32 has been inferred. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. _XLX_SEP_ seq  gmem VITIS_LOOP_38_1 cnn.cpp:38:19 cnn_predict(float*, float*) 
+remark: cnn.cpp:38:19: Multiple burst reads of length 4096 and bit width 32 in loop 'VITIS_LOOP_38_1'(cnn.cpp:38:19) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.

@@ -1,0 +1,9 @@
+<pragmas>
+<pragma file="/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp" line="16" pragmaType="inline" parentfunction="exp" off="0" region="0" recursive="0"/>
+<pragma file="/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/c++/expfloat.cpp" line="16" pragmaType="inline" parentfunction="exp" off="0" region="0" recursive="0"/>
+<pragma file="cnn.cpp" line="39" pragmaType="unroll" parentfunction="memcpy" factor="16" skip_exit_check="0"/>
+<pragma file="cnn.cpp" line="51" pragmaType="bind_storage" parentfunction="cnn_predict" op="666" impl="22" latency="-1" variable="img_read"/>
+<pragma file="cnn.cpp" line="52" pragmaType="interface" parentfunction="cnn_predict" mode="m_axi" port="img_in" bundle="gmem" offset="slave" name="" depth="4096" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="cnn.cpp" line="53" pragmaType="interface" parentfunction="cnn_predict" mode="s_axilite" port="steering_out" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn.cpp" line="54" pragmaType="interface" parentfunction="cnn_predict" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

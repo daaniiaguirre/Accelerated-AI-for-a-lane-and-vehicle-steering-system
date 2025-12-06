@@ -1,0 +1,4 @@
+cnn.cpp:51:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=img_read core=RAM_2P_BRAM
+        ^
+1 warning generated.

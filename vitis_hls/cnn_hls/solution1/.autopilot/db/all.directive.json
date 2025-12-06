@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "cnn_predict",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/dani\/Desktop\/SDU_Master\/EmbeddedSystems\/final_assignment\/vitis_hls\/cnn_hls\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "cnn_predict"
+              }]
+          }
+        },
+        {
+          "functionName": "cnn_predict",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/home\/dani\/Desktop\/SDU_Master\/EmbeddedSystems\/final_assignment\/vitis_hls\/cnn_hls\/solution1\/csynth.tcl",
+          "sourceLine": "18",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "cnn_predict"
+              }]
+          }
+        }
+      ]
+    }]}
