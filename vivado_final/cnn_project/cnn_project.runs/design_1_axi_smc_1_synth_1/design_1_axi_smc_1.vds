@@ -1,0 +1,703 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Nov 25 13:59:07 2025
+# Process ID: 17510
+# Current directory: /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.runs/design_1_axi_smc_1_synth_1
+# Command line: vivado -log design_1_axi_smc_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_smc_1.tcl
+# Log file: /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.runs/design_1_axi_smc_1_synth_1/design_1_axi_smc_1.vds
+# Journal file: /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.runs/design_1_axi_smc_1_synth_1/vivado.jou
+# Running On: dani-ASUS-TUF-Gaming-A15, OS: Linux, CPU Frequency: 4514.290 MHz, CPU Physical cores: 16, Host memory: 33462 MB
+#-----------------------------------------------------------
+source design_1_axi_smc_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1441.340 ; gain = 108.023 ; free physical = 14994 ; free virtual = 36015
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/export_improved'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/dani/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_smc_1
+Command: synth_design -top design_1_axi_smc_1 -part xczu3eg-sbva484-1-i -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17808
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/dani/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'K_MAX_EP_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:87]
+WARNING: [Synth 8-11067] parameter 'K_MAX_SC_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:88]
+WARNING: [Synth 8-11067] parameter 'K_MAX_CMD_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:89]
+WARNING: [Synth 8-11067] parameter 'K_MAX_LUTRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:90]
+WARNING: [Synth 8-11067] parameter 'K_MAX_BRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:91]
+WARNING: [Synth 8-11067] parameter 'K_MIN_BRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:92]
+WARNING: [Synth 8-11067] parameter 'K_MAX_SYNC_RATIO' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:93]
+WARNING: [Synth 8-11067] parameter 'K_MAX_PIPELINES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:94]
+WARNING: [Synth 8-11067] parameter 'K_LOG_MAX_PIPELINES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:95]
+WARNING: [Synth 8-11067] parameter 'K_MAX_LATENCY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:96]
+WARNING: [Synth 8-11067] parameter 'K_LOG_MAX_LATENCY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:97]
+WARNING: [Synth 8-11067] parameter 'K_AXIS_ARB_TDATA_NUM_BYTES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:98]
+WARNING: [Synth 8-11067] parameter 'K_MAX_USER_BITS_PER_BYTE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:99]
+WARNING: [Synth 8-11067] parameter 'K_MAX_INFO_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:100]
+WARNING: [Synth 8-11067] parameter 'K_MAX_OUTSTANDING_REQ' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:101]
+WARNING: [Synth 8-11067] parameter 'K_AXI_SIZE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:102]
+WARNING: [Synth 8-11067] parameter 'K_AXI_BURST_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:103]
+WARNING: [Synth 8-11067] parameter 'K_AXI_RESP_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:104]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LAST_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:105]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:106]
+WARNING: [Synth 8-11067] parameter 'K_AXI_EXCL_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:107]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LOCK_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:108]
+WARNING: [Synth 8-11067] parameter 'K_AXI3_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:109]
+WARNING: [Synth 8-11067] parameter 'K_AXI3_LOCK_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:110]
+WARNING: [Synth 8-11067] parameter 'K_AXI_PROT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:111]
+WARNING: [Synth 8-11067] parameter 'K_AXI_QOS_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:112]
+WARNING: [Synth 8-11067] parameter 'K_AXI_CACHE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:113]
+WARNING: [Synth 8-11067] parameter 'K_MAX_ACCEPTANCE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:114]
+WARNING: [Synth 8-11067] parameter 'K_MAX_FANOUT' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:115]
+WARNING: [Synth 8-11067] parameter 'K_MAX_READ_WATERMARK' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:116]
+WARNING: [Synth 8-11067] parameter 'K_MAX_BURST_LENGTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:117]
+WARNING: [Synth 8-11067] parameter 'CH_R' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:164]
+WARNING: [Synth 8-11067] parameter 'CH_W' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:165]
+WARNING: [Synth 8-11067] parameter 'CH_AR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:166]
+WARNING: [Synth 8-11067] parameter 'CH_AW' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:167]
+WARNING: [Synth 8-11067] parameter 'CH_B' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:168]
+WARNING: [Synth 8-11067] parameter 'CLK_DOWN' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:170]
+WARNING: [Synth 8-11067] parameter 'CLK_SYNC_ALIAS' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:171]
+WARNING: [Synth 8-11067] parameter 'CLK_ASYNC' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:172]
+WARNING: [Synth 8-11067] parameter 'CLK_SYNC' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:173]
+WARNING: [Synth 8-11067] parameter 'CLK_UP' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:174]
+WARNING: [Synth 8-11067] parameter 'CLKEN_NONE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:176]
+WARNING: [Synth 8-11067] parameter 'CLKEN_S' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:177]
+WARNING: [Synth 8-11067] parameter 'CLKEN_M' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:178]
+WARNING: [Synth 8-11067] parameter 'CLKEN_S_AND_M' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:179]
+WARNING: [Synth 8-11067] parameter 'ARB_BYPASS' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:180]
+WARNING: [Synth 8-11067] parameter 'ARB_ROUNDROBIN' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:181]
+WARNING: [Synth 8-11067] parameter 'ARB_SLAVE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:182]
+WARNING: [Synth 8-11067] parameter 'FIFO_LUTRAM' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:183]
+WARNING: [Synth 8-11067] parameter 'FIFO_BRAM' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:184]
+WARNING: [Synth 8-11067] parameter 'FIFO_NONE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:185]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_XPM_MEMORY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:186]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_FG' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:187]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_XPM_FIFO' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:188]
+WARNING: [Synth 8-11067] parameter 'K_T_STRUCT_EXCLUSIVE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:230]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_ADDR_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:232]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_RDATA_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:240]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_WDATA_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:244]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_BRSP_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:247]
+WARNING: [Synth 8-11067] parameter 'K_T_EXCLUSIVE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:253]
+WARNING: [Synth 8-11067] parameter 'K_T_ADDR_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:256]
+WARNING: [Synth 8-11067] parameter 'K_T_DATA_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:259]
+WARNING: [Synth 8-11067] parameter 'K_T_BRSP_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:261]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_ADDR_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:263]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_DATA_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:265]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BRSP_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:267]
+WARNING: [Synth 8-11067] parameter 'K_T_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:270]
+WARNING: [Synth 8-11067] parameter 'K_T_SEG_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:304]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_ADDR_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:305]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_DATA_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:308]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BRSP_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:310]
+WARNING: [Synth 8-11067] parameter 'K_T_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:313]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_AXPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:341]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_WPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:348]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_RPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:352]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:357]
+WARNING: [Synth 8-11067] parameter 'K_T_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:361]
+WARNING: [Synth 8-11067] parameter 'K_MAX_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:362]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_AXVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:547]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_WVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:557]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_RVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:561]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:566]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_AXVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:574]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_WVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:584]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_RVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:588]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_BVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:593]
+WARNING: [Synth 8-11067] parameter 'K_T_VECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:596]
+WARNING: [Synth 8-11067] parameter 'K_MAX_VECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:597]
+WARNING: [Synth 8-11067] parameter 'K_MAX_NUM_MNOC' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:674]
+WARNING: [Synth 8-11067] parameter 'K_MAX_NUM_SNOC' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:675]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_SCHED_LEN' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:676]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_TKN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:677]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_RTR_ADDR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:678]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_EJECT' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:679]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_ASCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:680]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_DESCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:681]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_THROUGH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:682]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_THROUGH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:683]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_ASCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:684]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_DESCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:685]
+INFO: [Common 17-14] Message 'Synth 8-11067' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-11014] non-net output port 'upsizer_valid' cannot be initialized at declaration in SystemVerilog mode [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/66be/hdl/sc_node_v1_0_vl_rfs.sv:2589]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3193.523 ; gain = 232.832 ; free physical = 3360 ; free virtual = 24524
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2432.247; parent = 2297.671; children = 134.576
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4175.742; parent = 3209.371; children = 966.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_1' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/synth/design_1_axi_smc_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_19UC7HI' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:377]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_one_0' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_0/synth/bd_6f02_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_one_0' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_0/synth/bd_6f02_one_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_6f02_psr_aclk_0' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/synth/bd_6f02_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/synth/bd_6f02_psr_aclk_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/home/dani/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/home/dani/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/home/dani/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_6f02_psr_aclk_0' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/synth/bd_6f02_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:412]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:412]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:412]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:412]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_6f02_psr_aclk_0' has 10 connections declared, but only 6 given [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:412]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_19UC7HI' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:377]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_PYUQT9' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:421]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00e_0' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_9/synth/bd_6f02_m00e_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/home/dani/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/home/dani/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00e_0' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_9/synth/bd_6f02_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_PYUQT9' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:421]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00s2a_0' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_8/synth/bd_6f02_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00s2a_0' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_8/synth/bd_6f02_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00a2s_0' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_5/synth/bd_6f02_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00a2s_0' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_5/synth/bd_6f02_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1PSXOAM' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:597]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00mmu_0' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_2/synth/bd_6f02_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00mmu_0' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_2/synth/bd_6f02_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00sic_0' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_4/synth/bd_6f02_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00sic_0' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_4/synth/bd_6f02_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00tr_0' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_3/synth/bd_6f02_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00tr_0' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_3/synth/bd_6f02_s00tr_0.sv:53]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_6f02_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:858]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_6f02_s00tr_0' has 40 connections declared, but only 39 given [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:858]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1PSXOAM' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:597]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1KC0NQC' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:900]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_sarn_0' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_6/synth/bd_6f02_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/home/dani/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/home/dani/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/home/dani/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (0#1) [/home/dani/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_sarn_0' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_6/synth/bd_6f02_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_srn_0' [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_7/synth/bd_6f02_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [/home/dani/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/home/dani/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [/home/dani/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (0#1) [/home/dani/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_srn_0' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_7/synth/bd_6f02_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1KC0NQC' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:900]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_1' (0#1) [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/synth/design_1_axi_smc_1.v:53]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_19UC7HI does not have driver. [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:393]
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regceb in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[165] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[164] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[163] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[162] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[161] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[160] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[159] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[158] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[157] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[156] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[155] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[154] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[153] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[152] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[151] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[150] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[149] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[148] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[147] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[146] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[145] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[144] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[143] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[142] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[141] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[140] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[139] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[138] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[137] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[136] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[135] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[134] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[133] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[132] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[131] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[130] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[129] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[128] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[127] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[126] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[125] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[124] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[123] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[122] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[121] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[120] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[119] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[118] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[117] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[116] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[115] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[114] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[113] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[112] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[111] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[110] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[109] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[108] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[107] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[106] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[105] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[104] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[103] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[102] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[101] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[100] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[99] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[98] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[97] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[96] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[95] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[94] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[93] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[92] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[91] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[90] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[89] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[88] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[87] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[86] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[85] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[84] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[83] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[82] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[81] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[80] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[79] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[78] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3332.336 ; gain = 371.645 ; free physical = 2934 ; free virtual = 24116
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2432.247; parent = 2297.671; children = 134.576
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4298.711; parent = 3332.340; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3347.180 ; gain = 386.488 ; free physical = 2934 ; free virtual = 24115
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2432.247; parent = 2297.671; children = 134.576
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4313.555; parent = 3347.184; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3347.180 ; gain = 386.488 ; free physical = 2942 ; free virtual = 24123
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2432.247; parent = 2297.671; children = 134.576
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4313.555; parent = 3347.184; children = 966.371
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.37 . Memory (MB): peak = 3361.117 ; gain = 0.000 ; free physical = 2857 ; free virtual = 24040
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.runs/design_1_axi_smc_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.runs/design_1_axi_smc_1_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/dani/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axi_smc_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axi_smc_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 10 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3539.773 ; gain = 0.000 ; free physical = 2933 ; free virtual = 24128
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3542.742 ; gain = 2.969 ; free physical = 2932 ; free virtual = 24127
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/dani/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3542.742 ; gain = 582.051 ; free physical = 3076 ; free virtual = 24283
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2568.517; parent = 2433.954; children = 134.576
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4477.102; parent = 3510.730; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3542.742 ; gain = 582.051 ; free physical = 3068 ; free virtual = 24276
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2568.517; parent = 2433.954; children = 134.576
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4477.102; parent = 3510.730; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.runs/design_1_axi_smc_1_synth_1/dont_touch.xdc, line 56).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3542.742 ; gain = 582.051 ; free physical = 3065 ; free virtual = 24272
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2568.517; parent = 2433.954; children = 134.576
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4477.102; parent = 3510.730; children = 966.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_11_decerr_slave'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_11_decerr_slave'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3542.742 ; gain = 582.051 ; free physical = 2880 ; free virtual = 24104
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2568.517; parent = 2433.954; children = 134.576
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4477.102; parent = 3510.730; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 13    
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 7     
+	   2 Input    2 Bit       Adders := 2     
+	   3 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 22    
++---Registers : 
+	             2178 Bit    Registers := 2     
+	              188 Bit    Registers := 1     
+	              166 Bit    Registers := 1     
+	               47 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 16    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 75    
++---Muxes : 
+	   2 Input 2178 Bit        Muxes := 1     
+	   2 Input   47 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 12    
+	   2 Input    6 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 6     
+	  11 Input    3 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 19    
+	   2 Input    1 Bit        Muxes := 40    
+	   6 Input    1 Bit        Muxes := 29    
+	  12 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 4     
+	  10 Input    1 Bit        Muxes := 3     
+	   7 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module bd_6f02.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module bd_6f02.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module bd_6f02.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module bd_6f02.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_6f02.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_6f02.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_6f02.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_6f02.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/FDRE_inst) is unused and will be removed from module bd_6f02.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_6f02.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_6f02.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_6f02.
+INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[2]) is unused and will be removed from module sc_mmu_v1_0_11_top.
+INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[1]) is unused and will be removed from module sc_mmu_v1_0_11_top.
+INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[0]) is unused and will be removed from module sc_mmu_v1_0_11_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3542.742 ; gain = 582.051 ; free physical = 1899 ; free virtual = 23174
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2568.517; parent = 2433.954; children = 134.576
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4477.102; parent = 3510.730; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                                | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|inst/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14  | 
+|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 166             | RAM32M16 x 12  | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 3826.875 ; gain = 866.184 ; free physical = 1620 ; free virtual = 22895
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2971.170; parent = 2832.694; children = 138.476
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4793.250; parent = 3826.879; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 3852.906 ; gain = 892.215 ; free physical = 1733 ; free virtual = 23008
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2983.925; parent = 2842.890; children = 141.035
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4819.281; parent = 3852.910; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                                | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|inst/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14  | 
+|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 166             | RAM32M16 x 12  | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 3868.922 ; gain = 908.230 ; free physical = 1801 ; free virtual = 23076
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2991.973; parent = 2850.942; children = 141.035
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4835.297; parent = 3868.926; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 3871.891 ; gain = 911.199 ; free physical = 1726 ; free virtual = 22998
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2992.000; parent = 2850.970; children = 141.035
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4838.266; parent = 3871.895; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 3871.891 ; gain = 911.199 ; free physical = 1726 ; free virtual = 22998
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2992.000; parent = 2850.970; children = 141.035
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4838.266; parent = 3871.895; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 3871.891 ; gain = 911.199 ; free physical = 1714 ; free virtual = 22986
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2992.211; parent = 2851.181; children = 141.035
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4838.266; parent = 3871.895; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 3871.891 ; gain = 911.199 ; free physical = 1707 ; free virtual = 22979
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2992.227; parent = 2851.196; children = 141.035
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4838.266; parent = 3871.895; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 3871.891 ; gain = 911.199 ; free physical = 1707 ; free virtual = 22979
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2992.227; parent = 2851.196; children = 141.035
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4838.266; parent = 3871.895; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 3871.891 ; gain = 911.199 ; free physical = 1707 ; free virtual = 22979
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2992.227; parent = 2851.196; children = 141.035
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4838.266; parent = 3871.895; children = 966.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | shift_reg_reg | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |    36|
+|2     |LUT2     |    30|
+|3     |LUT3     |    24|
+|4     |LUT4     |    53|
+|5     |LUT5     |    44|
+|6     |LUT6     |    93|
+|7     |RAM32M16 |    19|
+|8     |SRL16    |     1|
+|9     |SRL16E   |     7|
+|10    |FDCE     |    24|
+|11    |FDR      |     4|
+|12    |FDRE     |   305|
+|13    |FDSE     |    23|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 3871.891 ; gain = 911.199 ; free physical = 1705 ; free virtual = 22977
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2992.245; parent = 2851.215; children = 141.035
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4838.266; parent = 3871.895; children = 966.371
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13765 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 3871.891 ; gain = 715.637 ; free physical = 1740 ; free virtual = 23012
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 3871.898 ; gain = 911.199 ; free physical = 1736 ; free virtual = 23008
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3871.898 ; gain = 0.000 ; free physical = 1873 ; free virtual = 23145
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3934.590 ; gain = 0.000 ; free physical = 2049 ; free virtual = 23321
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  FDR => FDRE: 4 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 19 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete, checksum: f76d4578
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 222 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 3934.590 ; gain = 1822.984 ; free physical = 2426 ; free virtual = 23698
+INFO: [Common 17-1381] The checkpoint '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.runs/design_1_axi_smc_1_synth_1/design_1_axi_smc_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_smc_1, cache-ID = 29968012157cc1d6
+INFO: [Coretcl 2-1174] Renamed 65 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vivado_final/cnn_project/cnn_project.runs/design_1_axi_smc_1_synth_1/design_1_axi_smc_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_smc_1_utilization_synth.rpt -pb design_1_axi_smc_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 25 14:00:19 2025...

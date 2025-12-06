@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="dani" Host="dani-ASUS-TUF-Gaming-A15" Pid="17259" HostCore="16" HostMemory="32678192">
+    </Process>
+</ProcessHandle>
