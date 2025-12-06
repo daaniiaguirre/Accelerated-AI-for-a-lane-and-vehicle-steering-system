@@ -1,0 +1,37 @@
+[0.626s] Invoking command in '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/src/img_to_uart': PYTHONPATH=/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/img_to_uart build --build-base /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build install --record /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/install.log --single-version-externally-managed install_data
+[0.794s] running egg_info
+[0.794s] creating ../../build/img_to_uart/img_to_uart.egg-info
+[0.794s] writing ../../build/img_to_uart/img_to_uart.egg-info/PKG-INFO
+[0.794s] writing dependency_links to ../../build/img_to_uart/img_to_uart.egg-info/dependency_links.txt
+[0.794s] writing entry points to ../../build/img_to_uart/img_to_uart.egg-info/entry_points.txt
+[0.795s] writing requirements to ../../build/img_to_uart/img_to_uart.egg-info/requires.txt
+[0.795s] writing top-level names to ../../build/img_to_uart/img_to_uart.egg-info/top_level.txt
+[0.795s] writing manifest file '../../build/img_to_uart/img_to_uart.egg-info/SOURCES.txt'
+[0.796s] reading manifest file '../../build/img_to_uart/img_to_uart.egg-info/SOURCES.txt'
+[0.797s] writing manifest file '../../build/img_to_uart/img_to_uart.egg-info/SOURCES.txt'
+[0.797s] running build
+[0.797s] running build_py
+[0.797s] creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build
+[0.797s] creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib
+[0.797s] creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib/img_to_uart
+[0.797s] copying img_to_uart/uart_sender.py -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib/img_to_uart
+[0.797s] copying img_to_uart/__init__.py -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib/img_to_uart
+[0.797s] running install
+[0.798s] running install_lib
+[0.798s] creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart
+[0.798s] copying /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib/img_to_uart/uart_sender.py -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart
+[0.798s] copying /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib/img_to_uart/__init__.py -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart
+[0.799s] byte-compiling /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart/uart_sender.py to uart_sender.cpython-310.pyc
+[0.799s] byte-compiling /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart/__init__.py to __init__.cpython-310.pyc
+[0.799s] running install_data
+[0.799s] creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/share/ament_index
+[0.799s] creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/share/ament_index/resource_index
+[0.799s] creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/share/ament_index/resource_index/packages
+[0.799s] copying resource/img_to_uart -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/share/ament_index/resource_index/packages
+[0.799s] copying package.xml -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/share/img_to_uart
+[0.800s] running install_egg_info
+[0.801s] Copying ../../build/img_to_uart/img_to_uart.egg-info to /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart-0.0.0-py3.10.egg-info
+[0.801s] running install_scripts
+[0.816s] Installing sender script to /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/img_to_uart
+[0.816s] writing list of installed files to '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/install.log'
+[0.837s] Invoked command in '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/src/img_to_uart' returned '0': PYTHONPATH=/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/img_to_uart build --build-base /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build install --record /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/install.log --single-version-externally-managed install_data

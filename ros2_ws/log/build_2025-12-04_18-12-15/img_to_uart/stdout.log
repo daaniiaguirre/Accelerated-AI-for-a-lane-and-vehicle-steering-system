@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/img_to_uart/img_to_uart.egg-info
+writing ../../build/img_to_uart/img_to_uart.egg-info/PKG-INFO
+writing dependency_links to ../../build/img_to_uart/img_to_uart.egg-info/dependency_links.txt
+writing entry points to ../../build/img_to_uart/img_to_uart.egg-info/entry_points.txt
+writing requirements to ../../build/img_to_uart/img_to_uart.egg-info/requires.txt
+writing top-level names to ../../build/img_to_uart/img_to_uart.egg-info/top_level.txt
+writing manifest file '../../build/img_to_uart/img_to_uart.egg-info/SOURCES.txt'
+reading manifest file '../../build/img_to_uart/img_to_uart.egg-info/SOURCES.txt'
+writing manifest file '../../build/img_to_uart/img_to_uart.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build
+creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib
+creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib/img_to_uart
+copying img_to_uart/uart_sender.py -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib/img_to_uart
+copying img_to_uart/__init__.py -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib/img_to_uart
+running install
+running install_lib
+creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart
+copying /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib/img_to_uart/uart_sender.py -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart
+copying /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/build/lib/img_to_uart/__init__.py -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart
+byte-compiling /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart/uart_sender.py to uart_sender.cpython-310.pyc
+byte-compiling /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/share/ament_index
+creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/share/ament_index/resource_index
+creating /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/share/ament_index/resource_index/packages
+copying resource/img_to_uart -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/share/ament_index/resource_index/packages
+copying package.xml -> /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/share/img_to_uart
+running install_egg_info
+Copying ../../build/img_to_uart/img_to_uart.egg-info to /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/python3.10/site-packages/img_to_uart-0.0.0-py3.10.egg-info
+running install_scripts
+Installing sender script to /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/install/img_to_uart/lib/img_to_uart
+writing list of installed files to '/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/ros2_ws/build/img_to_uart/install.log'

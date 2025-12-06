@@ -1,0 +1,3 @@
+[console_scripts]
+sender = img_to_uart.uart_sender:main
+
