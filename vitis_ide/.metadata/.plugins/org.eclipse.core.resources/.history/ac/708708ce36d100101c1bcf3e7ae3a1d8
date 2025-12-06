@@ -1,0 +1,167 @@
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xcnn_predict.h"
+#include "xil_cache.h"
+#include "ff.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include "xtime_l.h"
+
+
+#define IMG_H       64
+#define IMG_W       64
+#define NUM_PIXELS  (IMG_H * IMG_W)
+
+// CNN driver instance
+static XCnn_predict CnnIp;
+
+// Image buffer in DDR
+static float img_buffer[NUM_PIXELS];
+
+// FAT filesystem object
+static FATFS fs;
+
+// ----------------------------------------------------------
+// Load image: 4096 floats, one per line
+// ----------------------------------------------------------
+int load_image_from_sd(const char *filepath, float *buffer)
+{
+    FIL file;
+    FRESULT res;
+    char line[64];
+    int i = 0;
+
+    xil_printf("Opening file: %s\r\n", filepath);
+
+    res = f_open(&file, filepath, FA_READ);
+    if (res != FR_OK) {
+        xil_printf("ERROR: Cannot open file (FR=%d)\r\n", res);
+        return -1;
+    }
+
+    while (i < NUM_PIXELS) {
+        if (f_gets(line, sizeof(line), &file) == NULL) {
+            xil_printf("ERROR: Unexpected end of file at pixel %d\r\n", i);
+            f_close(&file);
+            return -1;
+        }
+
+        buffer[i] = atof(line);   // convert text -> float
+        i++;
+    }
+
+    f_close(&file);
+
+    xil_printf("Loaded %d pixels from SD.\r\n", i);
+    return 0;
+}
+
+
+// ----------------------------------------------------------
+// Function to get the time
+// ----------------------------------------------------------
+
+double time_ms(XTime start, XTime end)
+{
+    // CPU runs at 1.2 GHz on Ultra96 A53
+    const double cpu_freq_hz = 1200000000.0;
+    return (double)(end - start) * 1000.0 / cpu_freq_hz;
+}
+// ----------------------------------------------------------
+// MAIN
+// ----------------------------------------------------------
+int main()
+{
+    int status;
+
+    xil_printf("\r\n=== CNN SD IMAGE TEST START ===\r\n");
+
+    // 1) Mount SD card
+    xil_printf("Mounting SD card...\r\n");
+    if (f_mount(&fs, "0:/", 1) != FR_OK) {
+        xil_printf("ERROR: SD mount failed.\r\n");
+        return -1;
+    }
+    xil_printf("SD mounted.\r\n");
+
+    // 2) Load test image
+    //const char *filepath = "0:/FRAMES/000609.TXT";  should be 0.2
+    const char *filepath = "0:/FRAMES/000734.TXT";
+
+
+    if (load_image_from_sd(filepath, img_buffer) != 0) {
+        xil_printf("ERROR: Image load failed.\r\n");
+        return -1;
+    }
+
+    // Ensure DDR sees new buffer content
+    Xil_DCacheFlushRange((UINTPTR)img_buffer, sizeof(img_buffer));
+
+    // 3) Initialize CNN IP
+    xil_printf("Initializing CNN IP...\r\n");
+    status = XCnn_predict_Initialize(&CnnIp, XPAR_XCNN_PREDICT_0_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: XCnn_predict_Initialize failed.\r\n");
+        return -1;
+    }
+    xil_printf("CNN IP initialized.\r\n");
+
+    // 5) Start timer
+       XTime tStart, tEnd;
+       XTime_GetTime(&tStart);
+
+
+    // 4) Set pointer to image buffer
+    XCnn_predict_Set_img_in(&CnnIp, (u64)img_buffer);
+
+
+    // 6) Start accelerator
+    xil_printf("Running CNN...\r\n");
+    XCnn_predict_Start(&CnnIp);
+
+    // 7) Wait for completion
+    while (!XCnn_predict_IsDone(&CnnIp));
+
+    // 7) Stop timer
+    XTime_GetTime(&tEnd);
+
+    // 8) Convert time
+    double elapsed_ms = time_ms(tStart, tEnd);
+    int elapsed_us  = (int)(elapsed_ms * 1000.0);
+
+    // 9) Print time
+    xil_printf("CNN processing time: %d us\r\n", elapsed_us);
+    xil_printf("CNN processing time: %d ms\r\n", (int)elapsed_ms);
+
+    xil_printf("CNN finished.\r\n");
+
+    // 8) Read output (raw u32)
+    u32 raw = XCnn_predict_Get_steering_out(&CnnIp);
+
+    // Convert raw bits to float
+    union {
+        u32 u;
+        float f;
+    } conv;
+    conv.u = raw;
+    float prediction = conv.f;
+
+    int pred_scaled = (int)(prediction * 10000.0f);
+
+    xil_printf("Prediction (raw u32): 0x%08x\r\n", raw);
+    xil_printf("Prediction * 1e4    : %d\r\n", pred_scaled);
+
+    // 8) Interpret action
+    if (pred_scaled < 4500)
+        xil_printf("Action: TURN LEFT\r\n");
+    else if (pred_scaled > 5500)
+        xil_printf("Action: TURN RIGHT\r\n");
+    else
+        xil_printf("Action: GO STRAIGHT\r\n");
+
+    xil_printf("=== TEST COMPLETE ===\r\n");
+
+    while (1);
+    return 0;
+}

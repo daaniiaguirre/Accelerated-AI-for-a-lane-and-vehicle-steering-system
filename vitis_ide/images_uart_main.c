@@ -1,0 +1,168 @@
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xil_cache.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include "xuartps_hw.h" // Low-level UART hardware driver
+#include "xcnn_predict.h"
+#include <stdint.h>
+
+
+
+#define IMG_H       64
+#define IMG_W       64
+#define NUM_PIXELS  (IMG_H * IMG_W)
+
+// Buffer to store the incoming float values
+static float img_buffer[NUM_PIXELS];
+// CNN driver instance
+static XCnn_predict CnnIp;
+
+// ----------------------------------------------------------
+// 1. Low-Level UART Byte Reader
+// Replaces 'inbyte()' to avoid missing header errors.
+// ----------------------------------------------------------
+char uart_read_byte() {
+    // STDOUT_BASEADDRESS is automatically defined in xparameters.h
+    // It usually points to 0xFF000000 or 0xFF010000 depending on board settings
+    u32 base_addr = STDOUT_BASEADDRESS;
+
+    // Wait until the Receive FIFO is NOT empty
+    while (!XUartPs_IsReceiveData(base_addr)) {
+        // Busy wait - CPU stays here until a byte arrives
+    }
+
+    // Read the byte from the hardware register
+    return (char)XUartPs_RecvByte(base_addr);
+}
+
+// ----------------------------------------------------------
+// 2. Float Reader
+// Reads characters until '\n' or '\r', then converts to float.
+// ----------------------------------------------------------
+float read_float_from_uart() {
+    char buffer[32];
+    int char_count = 0;
+    char c;
+
+    while(1) {
+        c = uart_read_byte();
+
+        // Check for line terminators (newline from Python)
+        if (c == '\n' || c == '\r') {
+            if (char_count == 0) {
+                // Ignore empty lines (e.g. \r\n sequence)
+                continue;
+            }
+            buffer[char_count] = '\0'; // Null-terminate the string
+            break;
+        } else {
+            // Store character if buffer isn't full
+            if (char_count < 30) {
+                buffer[char_count] = c;
+                char_count++;
+            }
+        }
+    }
+    // Convert string "0.5412" -> float 0.5412
+    return (float)atof(buffer);
+}
+
+// ----------------------------------------------------------
+// MAIN
+// ----------------------------------------------------------
+int main()
+{
+    xil_printf("\r\n=== UART IMAGE RECEIVER TEST ===\r\n");
+    xil_printf("Expected Image Size: %d x %d (%d pixels)\r\n", IMG_H, IMG_W, NUM_PIXELS);
+    int status;
+
+    while (1) {
+        xil_printf("\r\nWaiting for new image stream...\r\n");
+
+        int pixels_received = 0;
+
+        // Loop 4096 times to fill the buffer
+        for (int i = 0; i < NUM_PIXELS; i++) {
+
+            // Read one float (BLOCKING CALL)
+            img_buffer[i] = read_float_from_uart();
+
+            pixels_received++;
+
+            // --- PROGRESS FEEDBACK ---
+            // Print a dot every 64 pixels (1 row) so we know it's working
+            // We don't print every pixel because printing is slow and might cause us
+            // to miss incoming data.
+            if (pixels_received % 64 == 0) {
+                xil_printf(".");
+            }
+        }
+
+        xil_printf("\r\n"); // Newline after the dots
+        xil_printf("SUCCESS: Received %d pixels.\r\n", pixels_received);
+
+        // Verification: Print the first and last pixel to ensure data looks correct
+        // We multiply by 10000 to print as integer (since %f support is sometimes disabled in xil_printf)
+        //int first_val = (int)(img_buffer[0] * 10000);
+        //int last_val  = (int)(img_buffer[NUM_PIXELS-1] * 10000);
+
+        //xil_printf("First Pixel: 0.%04d\r\n", first_val);
+        //xil_printf("Last Pixel : 0.%04d\r\n", last_val);
+
+        //xil_printf("Ready for next frame.\r\n");
+        // Ensure DDR sees new buffer content
+		Xil_DCacheFlushRange((UINTPTR)img_buffer, sizeof(img_buffer));
+
+		// 3) Initialize CNN IP
+		status = XCnn_predict_Initialize(&CnnIp, XPAR_XCNN_PREDICT_0_DEVICE_ID);
+		if (status != XST_SUCCESS) {
+			xil_printf("ERROR: XCnn_predict_Initialize failed.\r\n");
+			return -1;
+		}
+
+		// 4) Set pointer to image buffer
+		XCnn_predict_Set_img_in(&CnnIp, (u64)img_buffer);
+
+		// 6) Start accelerator
+		xil_printf("Running CNN...\r\n");
+		XCnn_predict_Start(&CnnIp);
+
+		// 7) Wait for completion
+		while (!XCnn_predict_IsDone(&CnnIp));
+
+		xil_printf("CNN finished.\r\n");
+
+		// 8) Read output (raw u32)
+		u32 raw = XCnn_predict_Get_steering_out(&CnnIp);
+
+		// Convert raw bits to float
+		union {
+			u32 u;
+			float f;
+		} conv;
+		conv.u = raw;
+		float prediction = conv.f;
+
+		int pred_scaled = (int)(prediction * 10000.0f);
+
+		xil_printf("Prediction (raw u32): 0x%08x\r\n", raw);
+		xil_printf("Prediction * 1e4    : %d\r\n", pred_scaled);
+
+		// 8) Interpret action
+		if (pred_scaled < 4500)
+			xil_printf("Action: TURN LEFT\r\n");
+		else if (pred_scaled > 5500)
+			xil_printf("Action: TURN RIGHT\r\n");
+		else
+			xil_printf("Action: GO STRAIGHT\r\n");
+
+		xil_printf("=== TEST COMPLETE ===\r\n");
+
+		//while (1);
+		//return 0;
+
+    }
+
+}

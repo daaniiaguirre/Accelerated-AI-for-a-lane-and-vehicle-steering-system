@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="read_sd_system-bitFile" value="${project_loc:read_sd}/_ide/bitstream/final_bitstream.bit"/>
+	<item key="read_sd_system-bmmFile" value=""/>
+	<item key="read_sd_system-target" value="Local"/>
+	<item key="read_sd_system-device" value="Auto Detect"/>
+	<item key="read_sd_system-partial_bit" value="false"/>
+	<item key="read_sd_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="images_uart_application_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Avnet USB-to-JTAG/UART Pod V1 1234-oj1A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0&quot;,&quot;3&quot;:&quot;jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-5ba00477-0&quot;}}]}"/>
+	<item key="cnn_predict_application_system-bitFile" value="${project_loc:cnn_predict_application}/_ide/bitstream/final_bitstream.bit"/>
+	<item key="cnn_predict_application_system-bmmFile" value=""/>
+	<item key="cnn_predict_application_system-target" value="Local"/>
+	<item key="cnn_predict_application_system-device" value="Auto Detect"/>
+	<item key="cnn_predict_application_system-partial_bit" value="false"/>
+	<item key="cnn_predict_application_system-skip_rev_check" value="false"/>
+	<item key="images_uart_application_system-bitFile" value="${project_loc:images_uart_application}/_ide/bitstream/final_bitstream.bit"/>
+	<item key="images_uart_application_system-bmmFile" value=""/>
+	<item key="images_uart_application_system-target" value="Local"/>
+	<item key="images_uart_application_system-device" value="Auto Detect"/>
+	<item key="images_uart_application_system-partial_bit" value="false"/>
+	<item key="images_uart_application_system-skip_rev_check" value="false"/>
+</section>

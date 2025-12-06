@@ -1,0 +1,99 @@
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xcnn_predict.h"
+#include "xil_cache.h"
+#include <stdint.h>
+
+#define IMG_H       64
+#define IMG_W       64
+#define NUM_PIXELS  (IMG_H * IMG_W)
+
+// Global CNN instance (driver)
+static XCnn_predict CnnIp;
+
+// Global image buffer in DDR
+static float img_buffer[NUM_PIXELS];
+
+// ----------------------------------------------------------
+// Fill the image buffer with simple test data
+// (here: ramp from 0.0 to ~1.0)
+// ----------------------------------------------------------
+void fill_test_image(void)
+{
+    for (int i = 0; i < NUM_PIXELS; ++i) {
+        img_buffer[i] = (float)i / (float)NUM_PIXELS;
+    }
+}
+
+// ----------------------------------------------------------
+// Main: minimal sanity check for the cnn_predict IP
+// ----------------------------------------------------------
+int main(void)
+{
+    int status;
+
+    xil_printf("=== CNN SANITY TEST START ===\r\n");
+
+    // 1) Initialize CNN IP driver
+    xil_printf("Initializing CNN IP...\r\n");
+    status = XCnn_predict_Initialize(&CnnIp, XPAR_XCNN_PREDICT_0_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: XCnn_predict_Initialize failed (status = %d)\r\n", status);
+        return -1;
+    }
+    xil_printf("CNN IP initialized.\r\n");
+
+    // 2) Prepare test image in DDR
+    xil_printf("Filling test image buffer...\r\n");
+    fill_test_image();
+
+    // VERY IMPORTANT: flush caches so the FPGA sees the updated data
+    Xil_DCacheFlushRange((UINTPTR)img_buffer, sizeof(img_buffer));
+
+    // 3) Give the CNN the address of the input image
+    xil_printf("Configuring CNN input pointer...\r\n");
+    XCnn_predict_Set_img_in(&CnnIp, (u64)img_buffer);
+
+    // 4) Start the accelerator
+    xil_printf("Starting CNN accelerator...\r\n");
+    XCnn_predict_Start(&CnnIp);
+
+    // 5) Wait until it finishes (polling IsDone)
+    xil_printf("Waiting for CNN to finish...\r\n");
+    while (!XCnn_predict_IsDone(&CnnIp)) {
+        // busy wait
+    }
+    xil_printf("CNN is done.\r\n");
+
+    // 6) Read the output register and reinterpret as float
+    u32 raw = XCnn_predict_Get_steering_out(&CnnIp);
+
+    union {
+        u32 u;
+        float f;
+    } conv;
+    conv.u = raw;
+    float prediction = conv.f;
+
+    // xil_printf does not support %f, so we scale
+    int pred_scaled = (int)(prediction * 10000.0f);
+
+    xil_printf("Raw output (u32)      : 0x%08x\r\n", (unsigned int)raw);
+    xil_printf("Prediction * 1e4 (int): %d\r\n", pred_scaled);
+
+    // 7) Optional: interpret like in cnn_tb.cpp
+    if (pred_scaled < 4500) {
+        xil_printf("Action: TURN LEFT\r\n");
+    } else if (pred_scaled > 5500) {
+        xil_printf("Action: TURN RIGHT\r\n");
+    } else {
+        xil_printf("Action: GO STRAIGHT\r\n");
+    }
+
+    xil_printf("=== CNN SANITY TEST END ===\r\n");
+
+    // Stay here
+    while (1);
+
+    return 0;
+}

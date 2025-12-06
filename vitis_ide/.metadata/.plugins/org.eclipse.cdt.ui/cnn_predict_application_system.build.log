@@ -1,0 +1,10 @@
+18:34:42 **** Incremental Build of configuration Debug for project cnn_predict_application_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_project/export/cnn_project/cnn_project.xpfm -domains standalone_domain -bifpath /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_predict_application_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_project/export/cnn_project/cnn_project.xpfm --sys_config cnn_project --bif /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_predict_application_system/Debug/system.bif --bitstream /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_predict_application/_ide/bitstream/final_bitstream.bit --elf /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_predict_application/Debug/cnn_predict_application.elf,psu_cortexa53_0
+creating BOOT.BIN using /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_predict_application/_ide/bitstream/final_bitstream.bit
+Running /home/dani/Xilinx/Vitis/2022.2/bin/bootgen -arch zynqmp -image /home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_predict_application_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+18:34:48 Build Finished (took 5s.643ms)
+

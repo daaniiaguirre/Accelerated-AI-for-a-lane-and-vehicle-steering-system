@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_read_sd_system,org.eclipse.launchbar.core.descriptorType.default\:Debugger_images_uart_application-Default,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_cnn_predict_application_system,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_images_uart_application_system
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_images_uart_application-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_cnn_predict_application_system/activeLaunchMode=systemrun
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_cnn_predict_application_system/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_images_uart_application_system/activeLaunchMode=systemrun
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_read_sd_system/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_read_sd_system/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

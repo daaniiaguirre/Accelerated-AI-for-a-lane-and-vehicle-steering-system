@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="cnn_predict_application" location="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_predict_application" platform="/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_project/export/cnn_project/cnn_project.xpfm" platformUID="xilinx:ultra96v2::0.0(custom)" systemProject="cnn_predict_application_system" sysConfig="cnn_project" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="9565cfa4d3698728fdd99a959f25edd6">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.1364010023" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.548390005" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

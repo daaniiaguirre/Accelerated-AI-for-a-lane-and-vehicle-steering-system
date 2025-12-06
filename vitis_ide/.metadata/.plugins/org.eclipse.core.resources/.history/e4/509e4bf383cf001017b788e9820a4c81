@@ -1,0 +1,125 @@
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xuartps.h"
+#include <stdlib.h> // Required for atof()
+#include <string.h>
+#include <stdio.h>
+
+// --- CONFIGURATION ---
+#define IMG_H       64
+#define IMG_W       64
+#define NUM_PIXELS  (IMG_H * IMG_W) // 4096
+#define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID
+
+// --- GLOBAL VARIABLES ---
+static XUartPs Uart_Ps;
+static float img_buffer[NUM_PIXELS]; // Buffer to store the final image
+
+// ----------------------------------------------------------
+// Initialize UART Driver
+// ----------------------------------------------------------
+int Init_UART() {
+    XUartPs_Config *Config;
+    int Status;
+
+    Config = XUartPs_LookupConfig(UART_DEVICE_ID);
+    if (NULL == Config) return XST_FAILURE;
+
+    Status = XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+    if (Status != XST_SUCCESS) return XST_FAILURE;
+
+    // IMPORTANT: Must match your Python baud_rate = 115200
+    XUartPs_SetBaudRate(&Uart_Ps, 115200);
+
+    return XST_SUCCESS;
+}
+
+// ----------------------------------------------------------
+// Helper: Read a single byte (Blocking Mode)
+// ----------------------------------------------------------
+u8 uart_read_byte() {
+    // 1. Check if the hardware FIFO has data
+    //    We poll the status register until data is available.
+    while (!XUartPs_IsReceiveData(Uart_Ps.Config.BaseAddress));
+
+    // 2. Read one byte from the hardware FIFO
+    return XUartPs_ReadReg(Uart_Ps.Config.BaseAddress, XUARTPS_FIFO_OFFSET);
+}
+
+// ----------------------------------------------------------
+// Helper: Read characters until '\n', then convert to float
+// ----------------------------------------------------------
+float read_float_from_uart() {
+    char str_buf[20]; // Big enough to hold "0.1234\n"
+    int idx = 0;
+    u8 c;
+
+    while (1) {
+        // Get one character
+        c = uart_read_byte();
+
+        // Check for delimiters sent by Python
+        if (c == '\n') {
+            // End of number found
+            if (idx == 0) continue; // Ignore empty lines (if any)
+            str_buf[idx] = '\0';    // Null-terminate string for atof
+            break;
+        }
+
+        // Handle optional carriage return usually sent with serial
+        if (c == '\r') continue;
+
+        // Store character if we have space
+        if (idx < 19) {
+            str_buf[idx++] = (char)c;
+        }
+    }
+
+    // Convert ASCII string to float
+    return (float)atof(str_buf);
+}
+
+// ----------------------------------------------------------
+// MAIN
+// ----------------------------------------------------------
+int main() {
+    xil_printf("\r\n=== UART IMAGE RECEIVER START ===\r\n");
+
+    // 1) Initialize UART
+    if (Init_UART() != XST_SUCCESS) {
+        xil_printf("UART Init failed.\r\n");
+        return -1;
+    }
+
+    xil_printf("System Ready.\r\n");
+    xil_printf("Waiting for %d pixel values from Python...\r\n", NUM_PIXELS);
+
+    while (1) {
+        // --- STEP 1: READ THE IMAGE ---
+        // This loop guarantees we read exactly 4096 numbers before proceeding
+        for (int i = 0; i < NUM_PIXELS; i++) {
+            img_buffer[i] = read_float_from_uart();
+
+            // Debug: Print a dot every 256 pixels to show it's working
+            if (i % 256 == 0) xil_printf(".");
+        }
+        xil_printf("\r\nImage Received Successfully!\r\n");
+
+        // --- STEP 2: VERIFICATION (Optional) ---
+        // Print the first 5 pixels to compare with your Python debug prints
+        xil_printf("First 5 Pixels received:\r\n");
+        for(int i=0; i<5; i++) {
+            // Print as integer (scaled) because %f support is weak in embedded
+            int val = (int)(img_buffer[i] * 10000);
+            xil_printf("[%d]: 0.%04d\r\n", i, val);
+        }
+
+        // --- STEP 3: RUN YOUR CNN HERE ---
+        // XCnn_predict_Set_img_in(&CnnIp, (u64)img_buffer);
+        // ... rest of your CNN code ...
+
+        xil_printf("Ready for next frame.\r\n");
+    }
+
+    return 0;
+}

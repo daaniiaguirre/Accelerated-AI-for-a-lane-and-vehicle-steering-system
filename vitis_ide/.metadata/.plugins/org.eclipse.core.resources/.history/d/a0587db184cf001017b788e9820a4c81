@@ -1,0 +1,144 @@
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xcnn_predict.h"
+#include "xil_cache.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include "xtime_l.h"
+
+// Standard input/output for UART
+#include "inbyte.h"
+
+#define IMG_H       64
+#define IMG_W       64
+#define NUM_PIXELS  (IMG_H * IMG_W)
+
+// CNN driver instance
+static XCnn_predict CnnIp;
+
+// Image buffer in DDR
+static float img_buffer[NUM_PIXELS];
+
+// ----------------------------------------------------------
+// UART Reader Helper
+// Reads characters one by one until a newline '\n' is found
+// ----------------------------------------------------------
+float read_float_from_uart() {
+    char buffer[32];
+    int char_count = 0;
+    char c;
+
+    while(1) {
+        // inbyte() is a blocking call provided by Xilinx BSP
+        // It waits until a character arrives on UART
+        c = inbyte();
+
+        // Check for line terminators
+        if (c == '\n' || c == '\r') {
+            if (char_count == 0) {
+                // If we get an empty line, just ignore and keep waiting
+                continue;
+            }
+            buffer[char_count] = '\0'; // Null terminate string
+            break;
+        } else {
+            // Protect against buffer overflow
+            if (char_count < 30) {
+                buffer[char_count] = c;
+                char_count++;
+            }
+        }
+    }
+    // Convert the string "0.313726" to float
+    return (float)atof(buffer);
+}
+
+// ----------------------------------------------------------
+// Function to get the time (Helper)
+// ----------------------------------------------------------
+double time_ms(XTime start, XTime end)
+{
+    const double cpu_freq_hz = 1200000000.0; // 1.2 GHz for Ultra96-V2
+    return (double)(end - start) * 1000.0 / cpu_freq_hz;
+}
+
+// ----------------------------------------------------------
+// MAIN
+// ----------------------------------------------------------
+int main()
+{
+    int status;
+    XTime tStart, tEnd;
+
+    xil_printf("\r\n=== CNN UART STREAM MODE ===\r\n");
+
+    // 1) Initialize CNN IP
+    xil_printf("Initializing CNN IP...\r\n");
+    status = XCnn_predict_Initialize(&CnnIp, XPAR_XCNN_PREDICT_0_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: XCnn_predict_Initialize failed.\r\n");
+        return -1;
+    }
+
+    // 2) Set pointer to image buffer (Only needs to be done once if buffer address doesn't change)
+    XCnn_predict_Set_img_in(&CnnIp, (u64)img_buffer);
+    xil_printf("CNN Ready. Waiting for data stream...\r\n");
+
+    // ======================================================
+    // INFINITE LOOP
+    // ======================================================
+    while (1) {
+
+        // --- A. Receive Image from UART ---
+        // Note: This is blocking. The CPU pauses here until ROS sends data.
+        for (int i = 0; i < NUM_PIXELS; i++) {
+             img_buffer[i] = read_float_from_uart();
+
+             // Optional: Print a dot every 500 pixels so you know it's alive
+             // if (i % 500 == 0) xil_printf(".");
+        }
+
+        // xil_printf("\r\nImage Received. Processing...\r\n");
+
+        // --- B. Flush Cache ---
+        // Vital: Move data from CPU Cache to DDR so FPGA can see it
+        Xil_DCacheFlushRange((UINTPTR)img_buffer, sizeof(img_buffer));
+
+        // --- C. Start Timer ---
+        XTime_GetTime(&tStart);
+
+        // --- D. Run CNN Accelerator ---
+        XCnn_predict_Start(&CnnIp);
+        while (!XCnn_predict_IsDone(&CnnIp)); // Wait for hardware
+
+        // --- E. Stop Timer ---
+        XTime_GetTime(&tEnd);
+        double elapsed_ms = time_ms(tStart, tEnd);
+
+        // --- F. Process Output ---
+        u32 raw = XCnn_predict_Get_steering_out(&CnnIp);
+
+        // Bit-cast u32 to float
+        union { u32 u; float f; } conv;
+        conv.u = raw;
+        float prediction = conv.f;
+
+        // --- G. Print Result ---
+        int pred_scaled = (int)(prediction * 10000.0f);
+
+        // Format output neatly
+        xil_printf("Time: %d ms | Pred: %d | ", (int)elapsed_ms, pred_scaled);
+
+        if (pred_scaled < 4500)
+            xil_printf("<< LEFT\r\n");
+        else if (pred_scaled > 5500)
+            xil_printf("RIGHT >>\r\n");
+        else
+            xil_printf("|| STRAIGHT\r\n");
+
+        // Loop back and wait for the next image immediately
+    }
+
+    return 0;
+}

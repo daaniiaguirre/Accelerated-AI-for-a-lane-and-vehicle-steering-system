@@ -1,0 +1,21 @@
+10:31:51 **** Incremental Build of configuration Debug for project read_sd ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_project/export/cnn_project/sw/cnn_project/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: read_sd.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_project/export/cnn_project/sw/cnn_project/standalone_domain/bsplib/lib -o "read_sd.elf" ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: read_sd.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size read_sd.elf  |tee "read_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  67888	   2176	  23836	  93900	  16ecc	read_sd.elf
+Finished building: read_sd.elf.size
+ 
+
+10:31:51 Build Finished (took 482ms)
+

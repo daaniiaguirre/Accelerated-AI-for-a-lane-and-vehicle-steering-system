@@ -1,0 +1,160 @@
+timestamp=[2025-11-21 12:16:06], mode=WORKBENCH_START, duration=0:00:04.042, duration_ms=4042, data={}
+timestamp=[2025-11-21 12:16:07], mode=WORKBENCH_UI_INIT, duration=0:00:00.242, duration_ms=242, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-11-21 12:16:07], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.285, duration_ms=285, data={}
+timestamp=[2025-11-25 11:17:30], mode=WORKBENCH_START, duration=0:00:03.487, duration_ms=3487, data={}
+timestamp=[2025-11-25 11:17:30], mode=WORKBENCH_UI_INIT, duration=0:00:00.283, duration_ms=283, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
+timestamp=[2025-11-25 11:17:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.227, duration_ms=227, data={}
+timestamp=[2025-11-25 11:25:33], mode=PLATFORM_CREATION, duration=0:00:07.699, duration_ms=7699, data={platform_source=dsa, os=standalone, processor=psu_cortexa53, platform=null}
+timestamp=[2025-11-25 11:28:12], mode=APP_CREATION, duration=0:00:01.894, duration_ms=1894, data={name=cnn_application, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=cnn, application_type=application}
+timestamp=[2025-11-25 14:19:30], mode=WORKBENCH_START, duration=0:00:03.785, duration_ms=3785, data={}
+timestamp=[2025-11-25 14:19:30], mode=WORKBENCH_UI_INIT, duration=0:00:00.324, duration_ms=324, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system}
+timestamp=[2025-11-25 14:19:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.191, duration_ms=191, data={}
+timestamp=[2025-11-25 14:20:02], mode=WORKBENCH_START, duration=0:00:03.389, duration_ms=3389, data={}
+timestamp=[2025-11-25 14:20:02], mode=WORKBENCH_UI_INIT, duration=0:00:00.280, duration_ms=280, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system}
+timestamp=[2025-11-25 14:20:02], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.172, duration_ms=172, data={}
+timestamp=[2025-11-25 14:20:47], mode=WORKBENCH_START, duration=0:00:03.489, duration_ms=3489, data={}
+timestamp=[2025-11-25 14:20:47], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.148, duration_ms=148, data={}
+timestamp=[2025-11-25 14:20:47], mode=WORKBENCH_UI_INIT, duration=0:00:00.289, duration_ms=289, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system}
+timestamp=[2025-11-25 14:22:25], mode=PLATFORM_CREATION, duration=0:00:07.760, duration_ms=7760, data={platform_source=dsa, os=standalone, processor=psu_cortexa53, platform=null}
+timestamp=[2025-11-25 14:24:44], mode=APP_CREATION, duration=0:00:02.124, duration_ms=2124, data={name=cnn_predict_application, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=cnn_project, application_type=application}
+timestamp=[2025-11-25 15:11:25], mode=PLATFORM_GENERATION, duration=0:00:26.409, duration_ms=26409, data={name=cnn_project}
+timestamp=[2025-11-25 15:11:32], mode=BUILD, duration=0:00:00.292, duration_ms=292, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 15:15:11], mode=PLATFORM_GENERATION, duration=0:00:04.834, duration_ms=4834, data={name=cnn_project}
+timestamp=[2025-11-25 15:15:11], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=cnn_predict_application, configuration=Debug, clean_build=true}
+timestamp=[2025-11-25 15:15:12], mode=BUILD, duration=0:00:00.238, duration_ms=238, data={name=cnn_predict_application_system, configuration=Debug, clean_build=true}
+timestamp=[2025-11-25 15:16:27], mode=PLATFORM_GENERATION, duration=0:00:25.639, duration_ms=25639, data={name=cnn_project}
+timestamp=[2025-11-25 15:16:33], mode=BUILD, duration=0:00:00.387, duration_ms=387, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 15:21:32], mode=PLATFORM_GENERATION, duration=0:00:08.000, duration_ms=8000, data={name=cnn_project}
+timestamp=[2025-11-25 15:21:36], mode=BUILD, duration=0:00:00.389, duration_ms=389, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 15:28:55], mode=APP_CREATION, duration=0:00:01.140, duration_ms=1140, data={name=read_sd, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=cnn_project, application_type=application}
+timestamp=[2025-11-25 15:29:22], mode=PLATFORM_GENERATION, duration=0:00:04.482, duration_ms=4482, data={name=cnn_project}
+timestamp=[2025-11-25 15:29:27], mode=BUILD, duration=0:00:00.391, duration_ms=391, data={name=read_sd, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 15:29:33], mode=BUILD, duration=0:00:05.648, duration_ms=5648, data={name=read_sd_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 15:43:07], mode=PLATFORM_GENERATION, duration=0:00:04.836, duration_ms=4836, data={name=cnn_project}
+timestamp=[2025-11-25 15:43:07], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=read_sd, configuration=Debug, clean_build=true}
+timestamp=[2025-11-25 15:43:07], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=read_sd_system, configuration=Debug, clean_build=true}
+timestamp=[2025-11-25 15:43:37], mode=PLATFORM_GENERATION, duration=0:00:25.325, duration_ms=25325, data={name=cnn_project}
+timestamp=[2025-11-25 15:43:44], mode=BUILD, duration=0:00:00.391, duration_ms=391, data={name=read_sd, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 15:43:50], mode=BUILD, duration=0:00:05.597, duration_ms=5597, data={name=read_sd_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 15:47:06], mode=BUILD, duration=0:00:00.391, duration_ms=391, data={name=read_sd, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 15:47:12], mode=BUILD, duration=0:00:05.596, duration_ms=5596, data={name=read_sd_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 15:50:08], mode=BUILD, duration=0:00:00.392, duration_ms=392, data={name=read_sd, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 15:50:14], mode=BUILD, duration=0:00:05.596, duration_ms=5596, data={name=read_sd_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:12:58], mode=BUILD, duration=0:00:00.391, duration_ms=391, data={name=read_sd, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:13:04], mode=BUILD, duration=0:00:05.645, duration_ms=5645, data={name=read_sd_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:35:33], mode=BUILD, duration=0:00:00.391, duration_ms=391, data={name=read_sd, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:35:39], mode=BUILD, duration=0:00:05.597, duration_ms=5597, data={name=read_sd_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:39:51], mode=BUILD, duration=0:00:00.391, duration_ms=391, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:44:57], mode=PLATFORM_GENERATION, duration=0:00:04.884, duration_ms=4884, data={name=cnn_project}
+timestamp=[2025-11-25 16:44:57], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=cnn_predict_application, configuration=Debug, clean_build=true}
+timestamp=[2025-11-25 16:44:58], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=cnn_predict_application_system, configuration=Debug, clean_build=true}
+timestamp=[2025-11-25 16:45:26], mode=PLATFORM_GENERATION, duration=0:00:25.433, duration_ms=25433, data={name=cnn_project}
+timestamp=[2025-11-25 16:45:32], mode=BUILD, duration=0:00:00.391, duration_ms=391, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:51:42], mode=PLATFORM_GENERATION, duration=0:00:08.150, duration_ms=8150, data={name=cnn_project}
+timestamp=[2025-11-25 16:51:48], mode=BUILD, duration=0:00:00.392, duration_ms=392, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:51:54], mode=BUILD, duration=0:00:05.647, duration_ms=5647, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:55:31], mode=BUILD, duration=0:00:00.394, duration_ms=394, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:55:37], mode=BUILD, duration=0:00:05.600, duration_ms=5600, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:59:40], mode=BUILD, duration=0:00:00.394, duration_ms=394, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 16:59:47], mode=BUILD, duration=0:00:05.599, duration_ms=5599, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 17:07:17], mode=BUILD, duration=0:00:00.393, duration_ms=393, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 17:07:23], mode=BUILD, duration=0:00:05.599, duration_ms=5599, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 17:09:59], mode=BUILD, duration=0:00:00.392, duration_ms=392, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 17:10:05], mode=BUILD, duration=0:00:05.598, duration_ms=5598, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 17:11:27], mode=BUILD, duration=0:00:00.393, duration_ms=393, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 17:11:34], mode=BUILD, duration=0:00:05.600, duration_ms=5600, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 10:22:34], mode=WORKBENCH_START, duration=0:00:04.928, duration_ms=4928, data={}
+timestamp=[2025-11-28 10:22:35], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.345, duration_ms=345, data={}
+timestamp=[2025-11-28 10:22:35], mode=WORKBENCH_UI_INIT, duration=0:00:00.486, duration_ms=486, data={editors_count=5, platform_editors_count=2, projects_count=9, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system,cnn_predict_application,cnn_predict_application_system,cnn_project,read_sd,read_sd_system}
+timestamp=[2025-11-28 10:31:51], mode=BUILD, duration=0:00:00.510, duration_ms=510, data={name=read_sd, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 10:31:58], mode=BUILD, duration=0:00:05.643, duration_ms=5643, data={name=read_sd_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 10:53:47], mode=BUILD, duration=0:00:00.383, duration_ms=383, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:02:46], mode=BUILD, duration=0:00:00.388, duration_ms=388, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:02:59], mode=BUILD, duration=0:00:00.235, duration_ms=235, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:03:05], mode=BUILD, duration=0:00:05.658, duration_ms=5658, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:14:42], mode=BUILD, duration=0:00:00.382, duration_ms=382, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:14:50], mode=BUILD, duration=0:00:00.230, duration_ms=230, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:14:56], mode=BUILD, duration=0:00:05.649, duration_ms=5649, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:21:13], mode=BUILD, duration=0:00:00.392, duration_ms=392, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:21:20], mode=BUILD, duration=0:00:05.638, duration_ms=5638, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:24:41], mode=BUILD, duration=0:00:00.383, duration_ms=383, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:24:47], mode=BUILD, duration=0:00:05.648, duration_ms=5648, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:26:22], mode=BUILD, duration=0:00:00.380, duration_ms=380, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:26:28], mode=BUILD, duration=0:00:05.644, duration_ms=5644, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:38:49], mode=BUILD, duration=0:00:00.381, duration_ms=381, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:38:55], mode=BUILD, duration=0:00:05.539, duration_ms=5539, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:39:23], mode=BUILD, duration=0:00:00.380, duration_ms=380, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:39:29], mode=BUILD, duration=0:00:05.593, duration_ms=5593, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:41:19], mode=BUILD, duration=0:00:00.382, duration_ms=382, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 11:41:25], mode=BUILD, duration=0:00:05.592, duration_ms=5592, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 12:53:30], mode=WORKBENCH_START, duration=0:00:04.615, duration_ms=4615, data={}
+timestamp=[2025-11-28 12:53:31], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.315, duration_ms=315, data={}
+timestamp=[2025-11-28 12:53:31], mode=WORKBENCH_UI_INIT, duration=0:00:00.475, duration_ms=475, data={editors_count=7, platform_editors_count=4, projects_count=9, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system,cnn_predict_application,cnn_predict_application_system,cnn_project,read_sd,read_sd_system}
+timestamp=[2025-11-28 13:03:23], mode=BUILD, duration=0:00:00.582, duration_ms=582, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 13:03:30], mode=BUILD, duration=0:00:05.695, duration_ms=5695, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 13:04:35], mode=BUILD, duration=0:00:00.438, duration_ms=438, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 13:04:42], mode=BUILD, duration=0:00:05.643, duration_ms=5643, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 13:06:10], mode=BUILD, duration=0:00:00.437, duration_ms=437, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 13:06:16], mode=BUILD, duration=0:00:05.602, duration_ms=5602, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 13:07:06], mode=BUILD, duration=0:00:00.436, duration_ms=436, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-11-28 13:07:12], mode=BUILD, duration=0:00:05.653, duration_ms=5653, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 14:08:59], mode=WORKBENCH_START, duration=0:00:04.802, duration_ms=4802, data={}
+timestamp=[2025-12-01 14:08:59], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.294, duration_ms=294, data={}
+timestamp=[2025-12-01 14:08:59], mode=WORKBENCH_UI_INIT, duration=0:00:00.467, duration_ms=467, data={editors_count=6, platform_editors_count=4, projects_count=9, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system,cnn_predict_application,cnn_predict_application_system,cnn_project,read_sd,read_sd_system}
+timestamp=[2025-12-02 09:57:01], mode=WORKBENCH_START, duration=0:00:04.914, duration_ms=4914, data={}
+timestamp=[2025-12-02 09:57:01], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.332, duration_ms=332, data={}
+timestamp=[2025-12-02 09:57:01], mode=WORKBENCH_UI_INIT, duration=0:00:00.509, duration_ms=509, data={editors_count=7, platform_editors_count=5, projects_count=9, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system,cnn_predict_application,cnn_predict_application_system,cnn_project,read_sd,read_sd_system}
+timestamp=[2025-12-02 11:34:28], mode=APP_CREATION, duration=0:00:01.931, duration_ms=1931, data={name=images_uart_application, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=cnn_project, application_type=application}
+timestamp=[2025-12-02 11:35:23], mode=PLATFORM_GENERATION, duration=0:00:19.602, duration_ms=19602, data={name=cnn_project}
+timestamp=[2025-12-02 11:35:29], mode=BUILD, duration=0:00:00.435, duration_ms=435, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 11:35:35], mode=BUILD, duration=0:00:05.697, duration_ms=5697, data={name=images_uart_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 11:36:20], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 11:43:39], mode=BUILD, duration=0:00:00.379, duration_ms=379, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 11:43:45], mode=BUILD, duration=0:00:05.643, duration_ms=5643, data={name=images_uart_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 12:56:49], mode=WORKBENCH_START, duration=0:00:04.443, duration_ms=4443, data={}
+timestamp=[2025-12-02 12:56:49], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.228, duration_ms=228, data={}
+timestamp=[2025-12-02 12:56:49], mode=WORKBENCH_UI_INIT, duration=0:00:00.506, duration_ms=506, data={editors_count=9, platform_editors_count=4, projects_count=11, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system,cnn_predict_application,cnn_predict_application_system,cnn_project,images_uart_application,images_uart_application_system,read_sd,read_sd_system}
+timestamp=[2025-12-02 13:45:15], mode=BUILD, duration=0:00:00.510, duration_ms=510, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 13:45:21], mode=BUILD, duration=0:00:05.596, duration_ms=5596, data={name=images_uart_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 14:36:52], mode=BUILD, duration=0:00:00.283, duration_ms=283, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 14:42:11], mode=BUILD, duration=0:00:00.382, duration_ms=382, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 14:42:17], mode=BUILD, duration=0:00:05.590, duration_ms=5590, data={name=images_uart_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 14:53:14], mode=BUILD, duration=0:00:00.282, duration_ms=282, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 14:54:03], mode=BUILD, duration=0:00:00.280, duration_ms=280, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 14:54:49], mode=BUILD, duration=0:00:00.281, duration_ms=281, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 14:55:33], mode=BUILD, duration=0:00:00.282, duration_ms=282, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 14:56:21], mode=BUILD, duration=0:00:00.383, duration_ms=383, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 14:56:27], mode=BUILD, duration=0:00:05.538, duration_ms=5538, data={name=images_uart_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 14:58:23], mode=BUILD, duration=0:00:00.381, duration_ms=381, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 14:58:29], mode=BUILD, duration=0:00:05.537, duration_ms=5537, data={name=images_uart_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 16:10:27], mode=WORKBENCH_START, duration=0:00:04.520, duration_ms=4520, data={}
+timestamp=[2025-12-02 16:10:28], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.273, duration_ms=273, data={}
+timestamp=[2025-12-02 16:10:28], mode=WORKBENCH_UI_INIT, duration=0:00:00.502, duration_ms=502, data={editors_count=9, platform_editors_count=4, projects_count=11, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system,cnn_predict_application,cnn_predict_application_system,cnn_project,images_uart_application,images_uart_application_system,read_sd,read_sd_system}
+timestamp=[2025-12-02 17:11:55], mode=BUILD, duration=0:00:00.616, duration_ms=616, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 17:12:01], mode=BUILD, duration=0:00:05.693, duration_ms=5693, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 17:21:03], mode=BUILD, duration=0:00:00.389, duration_ms=389, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-02 17:21:10], mode=BUILD, duration=0:00:05.644, duration_ms=5644, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-03 22:45:16], mode=WORKBENCH_START, duration=0:00:04.285, duration_ms=4285, data={}
+timestamp=[2025-12-03 22:45:17], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.269, duration_ms=269, data={}
+timestamp=[2025-12-03 22:45:17], mode=WORKBENCH_UI_INIT, duration=0:00:00.521, duration_ms=521, data={editors_count=9, platform_editors_count=4, projects_count=11, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system,cnn_predict_application,cnn_predict_application_system,cnn_project,images_uart_application,images_uart_application_system,read_sd,read_sd_system}
+timestamp=[2025-12-04 10:04:33], mode=WORKBENCH_START, duration=0:00:04.956, duration_ms=4956, data={}
+timestamp=[2025-12-04 10:04:34], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.285, duration_ms=285, data={}
+timestamp=[2025-12-04 10:04:34], mode=WORKBENCH_UI_INIT, duration=0:00:00.490, duration_ms=490, data={editors_count=9, platform_editors_count=4, projects_count=11, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system,cnn_predict_application,cnn_predict_application_system,cnn_project,images_uart_application,images_uart_application_system,read_sd,read_sd_system}
+timestamp=[2025-12-04 18:12:43], mode=WORKBENCH_START, duration=0:00:04.591, duration_ms=4591, data={}
+timestamp=[2025-12-04 18:12:43], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.262, duration_ms=262, data={}
+timestamp=[2025-12-04 18:12:43], mode=WORKBENCH_UI_INIT, duration=0:00:00.501, duration_ms=501, data={editors_count=9, platform_editors_count=4, projects_count=11, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system,cnn_predict_application,cnn_predict_application_system,cnn_project,images_uart_application,images_uart_application_system,read_sd,read_sd_system}
+timestamp=[2025-12-04 18:14:04], mode=PLATFORM_GENERATION, duration=0:00:19.449, duration_ms=19449, data={name=cnn_project}
+timestamp=[2025-12-04 18:14:10], mode=BUILD, duration=0:00:00.430, duration_ms=430, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-04 18:14:16], mode=BUILD, duration=0:00:05.687, duration_ms=5687, data={name=images_uart_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-04 18:25:42], mode=BUILD, duration=0:00:00.390, duration_ms=390, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-04 18:25:49], mode=BUILD, duration=0:00:05.700, duration_ms=5700, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-04 18:29:43], mode=BUILD, duration=0:00:00.436, duration_ms=436, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-04 18:29:50], mode=BUILD, duration=0:00:05.649, duration_ms=5649, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-04 18:34:42], mode=BUILD, duration=0:00:00.385, duration_ms=385, data={name=cnn_predict_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-04 18:34:48], mode=BUILD, duration=0:00:05.647, duration_ms=5647, data={name=cnn_predict_application_system, configuration=Debug, clean_build=false}
+timestamp=[2025-12-05 10:36:34], mode=WORKBENCH_START, duration=0:00:04.509, duration_ms=4509, data={}
+timestamp=[2025-12-05 10:36:35], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.305, duration_ms=305, data={}
+timestamp=[2025-12-05 10:36:35], mode=WORKBENCH_UI_INIT, duration=0:00:00.508, duration_ms=508, data={editors_count=9, platform_editors_count=4, projects_count=11, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,cnn,cnn_application,cnn_application_system,cnn_predict_application,cnn_predict_application_system,cnn_project,images_uart_application,images_uart_application_system,read_sd,read_sd_system}
+timestamp=[2025-12-05 10:40:50], mode=BUILD, duration=0:00:00.249, duration_ms=249, data={name=images_uart_application, configuration=Debug, clean_build=true}
+timestamp=[2025-12-05 10:40:55], mode=BUILD, duration=0:00:00.527, duration_ms=527, data={name=images_uart_application, configuration=Debug, clean_build=false}
+timestamp=[2025-12-05 10:41:01], mode=BUILD, duration=0:00:05.540, duration_ms=5540, data={name=images_uart_application_system, configuration=Debug, clean_build=false}

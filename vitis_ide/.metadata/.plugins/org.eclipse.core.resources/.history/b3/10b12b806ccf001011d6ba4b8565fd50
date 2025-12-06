@@ -1,0 +1,114 @@
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xuartps.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+
+// --- CONFIGURATION ---
+#define IMG_H       64
+#define IMG_W       64
+#define NUM_PIXELS  (IMG_H * IMG_W) // 4096
+#define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID
+
+// --- GLOBAL VARIABLES ---
+static XUartPs Uart_Ps;
+// We store the received floats here
+static float img_buffer[NUM_PIXELS];
+
+// ----------------------------------------------------------
+// Initialize UART
+// ----------------------------------------------------------
+int Init_UART() {
+    XUartPs_Config *Config;
+    int Status;
+
+    Config = XUartPs_LookupConfig(UART_DEVICE_ID);
+    if (NULL == Config) return XST_FAILURE;
+
+    Status = XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+    if (Status != XST_SUCCESS) return XST_FAILURE;
+
+    // Must match Python baud rate
+    XUartPs_SetBaudRate(&Uart_Ps, 115200);
+    return XST_SUCCESS;
+}
+
+// ----------------------------------------------------------
+// Helper: Read a single byte (Blocking)
+// ----------------------------------------------------------
+u8 uart_read_byte() {
+    // Wait until data is available in the Receive FIFO
+    while (!XUartPs_IsReceiveData(Uart_Ps.Config.BaseAddress));
+    // Read one byte
+    return XUartPs_ReadReg(Uart_Ps.Config.BaseAddress, XUARTPS_FIFO_OFFSET);
+}
+
+// ----------------------------------------------------------
+// Helper: Read characters until '\n', then convert to float
+// ----------------------------------------------------------
+float read_float_from_uart() {
+    char str_buf[16];
+    int idx = 0;
+    u8 c;
+
+    while (1) {
+        c = uart_read_byte();
+
+        // Stop if we hit a newline, carriage return, or space
+        if (c == '\n' || c == ' ' || c == '\r') {
+            if (idx == 0) continue; // Skip empty lines or leading whitespace
+            str_buf[idx] = '\0';    // Null-terminate the string
+            break;
+        }
+
+        // Store char if buffer isn't full
+        if (idx < 15) {
+            str_buf[idx++] = (char)c;
+        }
+    }
+
+    // Convert string to float
+    return (float)atof(str_buf);
+}
+
+// ----------------------------------------------------------
+// MAIN
+// ----------------------------------------------------------
+int main() {
+    xil_printf("\r\n=== UART ECHO TEST START ===\r\n");
+
+    // 1) Initialize UART
+    if (Init_UART() != XST_SUCCESS) {
+        xil_printf("UART Init failed.\r\n");
+        return -1;
+    }
+    xil_printf("UART Initialized. Waiting for 4096 text values...\r\n");
+
+    while (1) {
+        // --- STEP A: RECEIVE ALL 4096 PIXELS ---
+        for (int i = 0; i < NUM_PIXELS; i++) {
+            img_buffer[i] = read_float_from_uart();
+
+            // Optional: Print a dot every 100 pixels so you know it's alive
+            if (i % 500 == 0) xil_printf(".");
+        }
+        xil_printf("\r\nImage Received!\r\n");
+
+
+        // --- STEP B: SEND BACK FIRST 20 VALUES ---
+        xil_printf("--- Echoing First 20 Values ---\r\n");
+
+        for (int i = 0; i < 20; i++) {
+            // Note: xil_printf does not support %f floats well by default.
+            // We multiply by 10000 to print as an integer (e.g., 0.1234 -> 1234)
+            int val_scaled = (int)(img_buffer[i] * 10000.0f);
+
+            xil_printf("Pixel[%d]: %d (scaled 10e4)\r\n", i, val_scaled);
+        }
+        xil_printf("-------------------------------\r\n");
+        xil_printf("Ready for next image.\r\n");
+    }
+
+    return 0;
+}

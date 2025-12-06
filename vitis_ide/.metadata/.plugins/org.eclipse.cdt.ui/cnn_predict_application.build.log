@@ -1,0 +1,21 @@
+18:34:41 **** Incremental Build of configuration Debug for project cnn_predict_application ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_project/export/cnn_project/sw/cnn_project/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: cnn_predict_application.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/dani/Desktop/SDU_Master/EmbeddedSystems/final_assignment/vitis_ide/cnn_project/export/cnn_project/sw/cnn_project/standalone_domain/bsplib/lib -o "cnn_predict_application.elf" ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: cnn_predict_application.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size cnn_predict_application.elf  |tee "cnn_predict_application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108900	   4712	  40428	 154040	  259b8	cnn_predict_application.elf
+Finished building: cnn_predict_application.elf.size
+ 
+
+18:34:42 Build Finished (took 381ms)
+
